@@ -1,0 +1,1243 @@
+
+[info 2015/07/16 11:31:38.404 PDT locator2 <main> tid=0x1] 
+  ---------------------------------------------------------------------------
+  
+    Copyright (C) 1997-2014 Pivotal Software, Inc. All rights reserved. This
+    product is protected by U.S. and international copyright and intellectual
+    property laws. Pivotal products are covered by one or more patents listed
+    at http://www.pivotal.io/patents.  Pivotal is a registered trademark
+    of trademark of Pivotal Software, Inc. in the United States and/or other
+    jurisdictions.  All other marks and names mentioned herein may be
+    trademarks of their respective companies.
+  
+  ---------------------------------------------------------------------------
+  Java version:   8.0.0 build 48319 07/31/2014 17:26:09 PDT javac 1.6.0_26
+  Native version: native code unavailable
+  Source revision: 48319
+  Source repository: gemfire/branches/cedar_dev_Oct12
+  Running on: Zachary-Hansen-MacBook-pro.local/192.168.1.134, 8 cpu(s), x86_64 Mac OS X 10.9.5
+  Process ID: 52413
+  User: zhansen
+  Current dir: /Users/zhansen/Documents/GemFire-Developer-8.0.a.RELEASE/workspace/social-media-gemfire/locator2
+  Home dir: /Users/zhansen
+  Command Line Parameters:
+    -Dgemfire.default.locators=192.168.1.134[41111]
+    -DgemfirePropertyFile=/Users/zhansen/Documents/GemFire-Developer-8.0.a.RELEASE/workspace/social-media-gemfire/gemfire.properties
+    -Dgemfire.enable-cluster-configuration=true
+    -Dgemfire.load-cluster-configuration-from-dir=false
+    -Xms50m
+    -Xmx50m
+    -XX:+UseConcMarkSweepGC
+    -XX:CMSInitiatingOccupancyFraction=60
+    -Dgemfire.launcher.registerSignalHandlers=true
+    -Djava.awt.headless=true
+    -Dsun.rmi.dgc.server.gcInterval=9223372036854775806
+  Class Path:
+    /Applications/GemFire-Developer-8.0.a.RELEASE/Pivotal_GemFire_800_b48319_Linux/lib/locator-dependencies.jar
+  Library Path:
+    /Users/zhansen/Library/Java/Extensions
+    /Library/Java/Extensions
+    /Network/Library/Java/Extensions
+    /System/Library/Java/Extensions
+    /usr/lib/java
+    .
+  System Properties:
+      Locator.forceLocatorDMType = true
+      awt.toolkit = sun.lwawt.macosx.LWCToolkit
+      file.encoding = UTF-8
+      file.encoding.pkg = sun.io
+      file.separator = /
+      ftp.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+      gemfire.default.locators = 192.168.1.134[41111]
+      gemfire.enable-cluster-configuration = true
+      gemfire.launcher.registerSignalHandlers = true
+      gemfire.load-cluster-configuration-from-dir = false
+      gemfirePropertyFile = /Users/zhansen/Documents/GemFire-Developer-8.0.a.RELEASE/workspace/social-media-gemfire/gemfire.properties
+      gopherProxySet = false
+      http.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+      java.awt.graphicsenv = sun.awt.CGraphicsEnvironment
+      java.awt.headless = true
+      java.awt.printerjob = sun.lwawt.macosx.CPrinterJob
+      java.class.version = 52.0
+      java.endorsed.dirs = /Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/endorsed
+      java.ext.dirs = /Users/zhansen/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java
+      java.home = /Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre
+      java.io.tmpdir = /var/folders/wh/29_3ztds0rdg7yx4nvrcfnhr0000gp/T/
+      java.runtime.name = Java(TM) SE Runtime Environment
+      java.runtime.version = 1.8.0_45-b14
+      java.specification.name = Java Platform API Specification
+      java.specification.vendor = Oracle Corporation
+      java.specification.version = 1.8
+      java.vendor = Oracle Corporation
+      java.vendor.url = http://java.oracle.com/
+      java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+      java.version = 1.8.0_45
+      java.vm.info = mixed mode
+      java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+      java.vm.specification.name = Java Virtual Machine Specification
+      java.vm.specification.vendor = Oracle Corporation
+      java.vm.specification.version = 1.8
+      java.vm.vendor = Oracle Corporation
+      java.vm.version = 25.45-b02
+      jna.platform.library.path = /usr/lib:/usr/lib
+      jnidispatch.path = /var/folders/wh/29_3ztds0rdg7yx4nvrcfnhr0000gp/T/jna--323296607/jna4242841204689946740.tmp
+      line.separator = 
+  
+      os.version = 10.9.5
+      path.separator = :
+      socksNonProxyHosts = local|*.local|169.254/16|*.169.254/16
+      sun.arch.data.model = 64
+      sun.boot.class.path = /Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/classes
+      sun.boot.library.path = /Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib
+      sun.cpu.endian = little
+      sun.cpu.isalist = 
+      sun.io.unicode.encoding = UnicodeBig
+      sun.java.command = com.gemstone.gemfire.distributed.LocatorLauncher start locator2 --port=41112 --redirect-output
+      sun.java.launcher = SUN_STANDARD
+      sun.jnu.encoding = UTF-8
+      sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+      sun.os.patch.level = unknown
+      sun.rmi.dgc.server.gcInterval = 9223372036854775806
+      user.country = US
+      user.language = en
+      user.timezone = America/Los_Angeles
+  ---------------------------------------------------------------------------
+  
+
+[info 2015/07/16 11:31:38.656 PDT locator2 <main> tid=0x1] Starting peer location for Distribution Locator on Zachary-Hansen-MacBook-pro.local[41112]
+
+[info 2015/07/16 11:31:38.660 PDT locator2 <main> tid=0x1] Starting Distribution Locator on Zachary-Hansen-MacBook-pro.local[41112]
+
+[info 2015/07/16 11:31:38.676 PDT locator2 <main> tid=0x1] Zachary-Hansen-MacBook-pro.local [ 41,112 ] attempting to get state from  localhost [ 41,111 ]
+
+[info 2015/07/16 11:31:38.706 PDT locator2 <main> tid=0x1] locator localhost(null)<v0>:41111 member address is Zachary-Hansen-MacBook-pro(locator1:52408:locator)<v0>:12034
+
+[info 2015/07/16 11:31:38.707 PDT locator2 <main> tid=0x1] Initial discovery set is [mbr=Zachary-Hansen-MacBook-pro(locator1:52408:locator):12034]
+
+[info 2015/07/16 11:31:39.708 PDT locator2 <main> tid=0x1] Starting distributed system
+
+[config 2015/07/16 11:31:39.711 PDT locator2 <main> tid=0x1] Startup Configuration:
+   ### GemFire Properties defined with system property ###
+  enable-cluster-configuration=true
+  load-cluster-configuration-from-dir=false
+  ### GemFire Properties defined with api ###
+  cache-xml-file=
+  locators=localhost[41111],localhost[41112],192.168.1.134[41112]
+  name=locator2
+  ### GemFire Properties defined with file:/Users/zhansen/Documents/GemFire-Developer-8.0.a.RELEASE/workspace/social-media-gemfire/gemfire.properties ###
+  log-level=config
+  mcast-port=0
+  ### GemFire Properties defined with launcher ###
+  log-file=locator2.log
+  ### GemFire Properties using default values ###
+  ack-severe-alert-threshold=0
+  ack-wait-threshold=15
+  archive-disk-space-limit=0
+  archive-file-size-limit=0
+  async-distribution-timeout=0
+  async-max-queue-size=8
+  async-queue-timeout=60000
+  bind-address=
+  cluster-ssl-ciphers=any
+  cluster-ssl-enabled=false
+  cluster-ssl-keystore=
+  cluster-ssl-keystore-password=
+  cluster-ssl-keystore-type=
+  cluster-ssl-protocols=any
+  cluster-ssl-require-authentication=true
+  cluster-ssl-truststore=
+  cluster-ssl-truststore-password=
+  conflate-events=server
+  conserve-sockets=true
+  delta-propagation=true
+  deploy-working-dir=.
+  disable-auto-reconnect=false
+  disable-tcp=false
+  distributed-system-id=-1
+  durable-client-id=
+  durable-client-timeout=300
+  enable-network-partition-detection=false
+  enable-time-statistics=false
+  enforce-unique-host=false
+  gateway-ssl-ciphers=any
+  gateway-ssl-enabled=false
+  gateway-ssl-keystore=
+  gateway-ssl-keystore-password=
+  gateway-ssl-keystore-type=
+  gateway-ssl-protocols=any
+  gateway-ssl-require-authentication=true
+  gateway-ssl-truststore=
+  gateway-ssl-truststore-password=
+  groups=
+  http-service-bind-address=
+  http-service-port=7070
+  jmx-manager=true
+  jmx-manager-access-file=
+  jmx-manager-bind-address=
+  jmx-manager-hostname-for-clients=
+  jmx-manager-http-port=7070
+  jmx-manager-password-file=
+  jmx-manager-port=1099
+  jmx-manager-ssl=false
+  jmx-manager-ssl-ciphers=any
+  jmx-manager-ssl-enabled=false
+  jmx-manager-ssl-keystore=
+  jmx-manager-ssl-keystore-password=
+  jmx-manager-ssl-keystore-type=
+  jmx-manager-ssl-protocols=any
+  jmx-manager-ssl-require-authentication=true
+  jmx-manager-ssl-truststore=
+  jmx-manager-ssl-truststore-password=
+  jmx-manager-start=false
+  jmx-manager-update-rate=2000
+  license-application-cache=
+  license-data-management=
+  license-server-timeout=10000
+  license-working-dir=
+  log-disk-space-limit=0
+  log-file-size-limit=0
+  max-num-reconnect-tries=3
+  max-wait-time-reconnect=60000
+  mcast-address=239.192.81.1
+  mcast-flow-control=1048576, 0.25, 5000
+  mcast-recv-buffer-size=1048576
+  mcast-send-buffer-size=65535
+  mcast-ttl=32
+  member-timeout=5000
+  membership-port-range=1024-65535
+  memcached-port=0
+  memcached-protocol=ASCII
+  redundancy-zone=
+  remote-locators=
+  remove-unresponsive-client=false
+  roles=
+  security-=
+  security-client-accessor=
+  security-client-accessor-pp=
+  security-client-auth-init=
+  security-client-authenticator=
+  security-client-dhalgo=
+  security-log-file=
+  security-log-level=config
+  security-peer-auth-init=
+  security-peer-authenticator=
+  security-peer-verifymember-timeout=1000
+  server-bind-address=
+  server-ssl-ciphers=any
+  server-ssl-enabled=false
+  server-ssl-keystore=
+  server-ssl-keystore-password=
+  server-ssl-keystore-type=
+  server-ssl-protocols=any
+  server-ssl-require-authentication=true
+  server-ssl-truststore=
+  server-ssl-truststore-password=
+  socket-buffer-size=32768
+  socket-lease-time=60000
+  ssl-ciphers=any
+  ssl-enabled=false
+  ssl-protocols=any
+  ssl-require-authentication=true
+  start-dev-rest-api=false
+  start-locator=
+  statistic-archive-file=
+  statistic-sample-rate=1000
+  statistic-sampling-enabled=true
+  tcp-port=0
+  udp-fragment-size=60000
+  udp-recv-buffer-size=1048576
+  udp-send-buffer-size=65535
+  use-cluster-configuration=true
+  user-command-packages=
+  writable-working-dir=
+  
+
+[info 2015/07/16 11:31:39.764 PDT locator2 <main> tid=0x1] GemFire P2P Listener started on  tcp:///192.168.1.134:27426
+
+[info 2015/07/16 11:31:39.824 PDT locator2 <PingSender> tid=0x2c] locator localhost(null)<v0>:41112 member address is Zachary-Hansen-MacBook-pro(locator2:52413:locator):53079
+
+[info 2015/07/16 11:31:39.826 PDT locator2 <PingSender> tid=0x2c] locator localhost(null)<v0>:41111 member address is Zachary-Hansen-MacBook-pro(locator1:52408:locator)<v0>:12034
+
+[info 2015/07/16 11:31:39.829 PDT locator2 <PingSender> tid=0x2c] locator Zachary-Hansen-MacBook-pro(null)<v0>:41112 member address is Zachary-Hansen-MacBook-pro(locator2:52413:locator):53079
+
+[info 2015/07/16 11:31:39.829 PDT locator2 <main> tid=0x1] Attempting to join distributed system whose membership coordinator is Zachary-Hansen-MacBook-pro(locator1:52408:locator)<v0>:12034 using membership ID Zachary-Hansen-MacBook-pro(locator2:52413:locator):53079
+
+[info 2015/07/16 11:31:39.997 PDT locator2 <FD_SOCK Ping thread> tid=0x2e] GemFire failure detection is now monitoring Zachary-Hansen-MacBook-pro(locator1:52408:locator)<v0>:12034
+
+[info 2015/07/16 11:31:39.998 PDT locator2 <main> tid=0x1] Entered into membership in group GF7 with ID Zachary-Hansen-MacBook-pro(locator2:52413:locator)<v1>:53079.
+
+[info 2015/07/16 11:31:39.999 PDT locator2 <main> tid=0x1] Starting DistributionManager Zachary-Hansen-MacBook-pro(locator2:52413:locator)<v1>:53079. 
+
+[info 2015/07/16 11:31:39.999 PDT locator2 <main> tid=0x1] Initial (membershipManager) view =  [Zachary-Hansen-MacBook-pro(locator1:52408:locator)<v0>:12034, Zachary-Hansen-MacBook-pro(locator2:52413:locator)<v1>:53079]
+
+[info 2015/07/16 11:31:40.000 PDT locator2 <main> tid=0x1] Admitting member <Zachary-Hansen-MacBook-pro(locator1:52408:locator)<v0>:12034>. Now there are 1 non-admin member(s).
+
+[info 2015/07/16 11:31:40.000 PDT locator2 <main> tid=0x1] Admitting member <Zachary-Hansen-MacBook-pro(locator2:52413:locator)<v1>:53079>. Now there are 2 non-admin member(s).
+
+[info 2015/07/16 11:31:40.029 PDT locator2 <P2P message reader for Zachary-Hansen-MacBook-pro(locator1:52408:locator)<v0>:12034 shared unordered uid=1 port=64888> tid=0x31] Member Zachary-Hansen-MacBook-pro(locator1:52408:locator)<v0>:12034 is equivalent or in the same redundancy zone.
+
+[info 2015/07/16 11:31:40.029 PDT locator2 <main> tid=0x1] DistributionManager Zachary-Hansen-MacBook-pro(locator2:52413:locator)<v1>:53079 started on localhost[41112],localhost[41111],Zachary-Hansen-MacBook-pro.local[41112]. There were 1 other DMs. others: [Zachary-Hansen-MacBook-pro(locator1:52408:locator)<v0>:12034]   (locator)
+
+[info 2015/07/16 11:31:40.038 PDT locator2 <Thread-10 StatSampler> tid=0x36] Disabling statistic archival.
+
+[info 2015/07/16 11:31:40.038 PDT locator2 <main> tid=0x1] Creating cache for locator.
+
+[info 2015/07/16 11:31:40.052 PDT locator2 <Pooled Message Processor 1> tid=0x37] Adding alert listener Zachary-Hansen-MacBook-pro(locator1:52408:locator)<v0>:12034 level=1000
+
+[info 2015/07/16 11:31:40.147 PDT locator2 <main> tid=0x1] Initializing region _monitoringRegion_192.168.1.134<v1>53079
+
+[info 2015/07/16 11:31:40.155 PDT locator2 <main> tid=0x1] Region _monitoringRegion_192.168.1.134<v1>53079 requesting initial image from Zachary-Hansen-MacBook-pro(locator1:52408:locator)<v0>:12034
+
+[info 2015/07/16 11:31:40.159 PDT locator2 <main> tid=0x1] _monitoringRegion_192.168.1.134<v1>53079 is done getting image from Zachary-Hansen-MacBook-pro(locator1:52408:locator)<v0>:12034. isDeltaGII is false
+
+[info 2015/07/16 11:31:40.160 PDT locator2 <main> tid=0x1] Initialization of region _monitoringRegion_192.168.1.134<v1>53079 completed
+
+[info 2015/07/16 11:31:40.865 PDT locator2 <main> tid=0x1] SharedConfigStatusRequestHandler installed
+
+[info 2015/07/16 11:31:40.865 PDT locator2 <main> tid=0x1] Locator started on  192.168.1.134[41112]
+
+[info 2015/07/16 11:31:40.866 PDT locator2 <main> tid=0x1] Starting server location for Distribution Locator on Zachary-Hansen-MacBook-pro.local[41112]
+Locator in /Users/zhansen/Documents/GemFire-Developer-8.0.a.RELEASE/workspace/social-media-gemfire/locator2 on 192.168.1.134[41112] as locator2 is currently online.
+Process ID: 52413
+Uptime: 2 seconds
+GemFire Version: 8.0.0
+Java Version: 1.8.0_45
+Log File: /Users/zhansen/Documents/GemFire-Developer-8.0.a.RELEASE/workspace/social-media-gemfire/locator2/locator2.log
+JVM Arguments: -Dgemfire.default.locators=192.168.1.134[41111] -DgemfirePropertyFile=/Users/zhansen/Documents/GemFire-Developer-8.0.a.RELEASE/workspace/social-media-gemfire/gemfire.properties -Dgemfire.enable-cluster-configuration=true -Dgemfire.load-cluster-configuration-from-dir=false -Xms50m -Xmx50m -XX:+UseConcMarkSweepGC -XX:CMSInitiatingOccupancyFraction=60 -Dgemfire.launcher.registerSignalHandlers=true -Djava.awt.headless=true -Dsun.rmi.dgc.server.gcInterval=9223372036854775806
+Class-Path: /Applications/GemFire-Developer-8.0.a.RELEASE/Pivotal_GemFire_800_b48319_Linux/lib/locator-dependencies.jar
+[info 2015/07/16 11:31:40.880 PDT locator2 <WAN Locator Discovery Thread> tid=0x44] Locator discovery task exchanged locator information Zachary-Hansen-MacBook-pro.local[41112] with localhost[41112].
+
+[info 2015/07/16 11:31:40.880 PDT locator2 <WAN Locator Discovery Thread> tid=0x43] Locator discovery task exchanged locator information Zachary-Hansen-MacBook-pro.local[41112] with localhost[41111].
+
+[info 2015/07/16 11:31:40.883 PDT locator2 <Pooled Message Processor 1> tid=0x37] Locked disk store cluster_config for exclusive access in directory: /Users/zhansen/Documents/GemFire-Developer-8.0.a.RELEASE/workspace/social-media-gemfire/locator2/ConfigDiskDir_locator2
+
+[info 2015/07/16 11:31:40.893 PDT locator2 <Pooled Message Processor 1> tid=0x37] Created disk store cluster_config with unique id da7d20fae2584842-a1c2bc2c488ee1aa
+
+[info 2015/07/16 11:31:40.902 PDT locator2 <Pooled Message Processor 1> tid=0x37] recovery region initialization took 1 ms
+
+[info 2015/07/16 11:31:40.915 PDT locator2 <Pooled Message Processor 1> tid=0x37] Created oplog#1 drf for disk store cluster_config.
+
+[info 2015/07/16 11:31:40.920 PDT locator2 <Pooled Message Processor 1> tid=0x37] Created oplog#1 crf for disk store cluster_config.
+
+[info 2015/07/16 11:31:40.930 PDT locator2 <Pooled Message Processor 1> tid=0x37] Initializing region _ConfigurationRegion
+
+[info 2015/07/16 11:31:40.937 PDT locator2 <Pooled Message Processor 1> tid=0x37] Region _ConfigurationRegion requesting initial image from Zachary-Hansen-MacBook-pro(locator1:52408:locator)<v0>:12034
+
+[info 2015/07/16 11:31:40.941 PDT locator2 <Pooled Message Processor 1> tid=0x37] _ConfigurationRegion is done getting image from Zachary-Hansen-MacBook-pro(locator1:52408:locator)<v0>:12034. isDeltaGII is false
+
+[info 2015/07/16 11:31:40.941 PDT locator2 <Pooled Message Processor 1> tid=0x37] Region _ConfigurationRegion initialized persistent id: /192.168.1.134:/Users/zhansen/Documents/GemFire-Developer-8.0.a.RELEASE/workspace/social-media-gemfire/locator2/ConfigDiskDir_locator2 created at timestamp 1437071500930 version 0 diskStoreId da7d20fae2584842-a1c2bc2c488ee1aa name locator2 with data from Zachary-Hansen-MacBook-pro(locator1:52408:locator)<v0>:12034.
+
+[info 2015/07/16 11:31:40.941 PDT locator2 <Pooled Message Processor 1> tid=0x37] Initialization of region _ConfigurationRegion completed
+
+[info 2015/07/16 11:31:40.950 PDT locator2 <Pooled Message Processor 1> tid=0x37] Completed writing the shared configuration to 'cluster_config' directory
+
+[info 2015/07/16 11:31:40.950 PDT locator2 <Pooled Message Processor 1> tid=0x37] Getting Jar files from other locators
+
+[info 2015/07/16 11:31:40.961 PDT locator2 <Pooled Message Processor 1> tid=0x37] No deployed jars found on other locators.
+
+[info 2015/07/16 11:31:40.963 PDT locator2 <Pooled Message Processor 1> tid=0x37] ConfigRequestHandler installed
+
+[info 2015/07/16 11:31:40.963 PDT locator2 <Pooled Message Processor 1> tid=0x37] Cluster configuration service start up completed successfully and is now running ....
+
+[info 2015/07/16 11:31:42.347 PDT locator2 <UDP ucast receiver> tid=0x28] Membership: received new view  [Zachary-Hansen-MacBook-pro(locator1:52408:locator)<v0>:12034|2] [Zachary-Hansen-MacBook-pro(locator1:52408:locator)<v0>:12034/51671, Zachary-Hansen-MacBook-pro(locator2:52413:locator)<v1>:53079/27426, Zachary-Hansen-MacBook-pro(server1:52414)<v2>:27484/38177]
+
+[info 2015/07/16 11:31:42.347 PDT locator2 <UDP ucast receiver> tid=0x28] Membership: lead member is now Zachary-Hansen-MacBook-pro(server1:52414)<v2>:27484
+
+[info 2015/07/16 11:31:42.348 PDT locator2 <FD_SOCK Ping thread> tid=0x2e] GemFire failure detection is now monitoring Zachary-Hansen-MacBook-pro(server1:52414)<v2>:27484
+
+[info 2015/07/16 11:31:42.349 PDT locator2 <View Message Processor> tid=0x4d] Admitting member <Zachary-Hansen-MacBook-pro(server1:52414)<v2>:27484>. Now there are 3 non-admin member(s).
+
+[info 2015/07/16 11:31:42.350 PDT locator2 <DM-MemberEventInvoker> tid=0x20] ManagementMembershipListener member joined .. Zachary-Hansen-MacBook-pro(server1:52414)<v2>:27484
+
+[info 2015/07/16 11:31:42.369 PDT locator2 <Pooled High Priority Message Processor 1> tid=0x34] Member Zachary-Hansen-MacBook-pro(server1:52414)<v2>:27484 is equivalent or in the same redundancy zone.
+
+[info 2015/07/16 11:31:43.196 PDT locator2 <locator request thread[1]> tid=0x2d] Receieved request for configuration  : ConfigurationRequest for groups : 
+   cluster[cluster]
+
+[info 2015/07/16 11:31:43.198 PDT locator2 <locator request thread[1]> tid=0x2d] Building up configuration response with following configurations
+
+[info 2015/07/16 11:31:44.765 PDT locator2 <UDP ucast receiver> tid=0x28] Membership: received new view  [Zachary-Hansen-MacBook-pro(locator1:52408:locator)<v0>:12034|3] [Zachary-Hansen-MacBook-pro(locator1:52408:locator)<v0>:12034/51671, Zachary-Hansen-MacBook-pro(locator2:52413:locator)<v1>:53079/27426, Zachary-Hansen-MacBook-pro(server1:52414)<v2>:27484/38177, Zachary-Hansen-MacBook-pro(server2:52415)<v3>:57342/62249]
+
+[info 2015/07/16 11:31:44.767 PDT locator2 <View Message Processor> tid=0x4d] Admitting member <Zachary-Hansen-MacBook-pro(server2:52415)<v3>:57342>. Now there are 4 non-admin member(s).
+
+[info 2015/07/16 11:31:44.767 PDT locator2 <DM-MemberEventInvoker> tid=0x20] ManagementMembershipListener member joined .. Zachary-Hansen-MacBook-pro(server2:52415)<v3>:57342
+
+[info 2015/07/16 11:31:44.793 PDT locator2 <Pooled High Priority Message Processor 1> tid=0x34] Member Zachary-Hansen-MacBook-pro(server2:52415)<v3>:57342 is equivalent or in the same redundancy zone.
+
+[info 2015/07/16 11:31:45.630 PDT locator2 <locator request thread[1]> tid=0x2d] Receieved request for configuration  : ConfigurationRequest for groups : 
+   cluster[cluster]
+
+[info 2015/07/16 11:31:45.631 PDT locator2 <locator request thread[1]> tid=0x2d] Building up configuration response with following configurations
+
+[info 2015/07/16 11:31:47.135 PDT locator2 <UDP ucast receiver> tid=0x28] Membership: received new view  [Zachary-Hansen-MacBook-pro(locator1:52408:locator)<v0>:12034|4] [Zachary-Hansen-MacBook-pro(locator1:52408:locator)<v0>:12034/51671, Zachary-Hansen-MacBook-pro(locator2:52413:locator)<v1>:53079/27426, Zachary-Hansen-MacBook-pro(server1:52414)<v2>:27484/38177, Zachary-Hansen-MacBook-pro(server2:52415)<v3>:57342/62249, Zachary-Hansen-MacBook-pro(server3:52417)<v4>:29063/21190]
+
+[info 2015/07/16 11:31:47.136 PDT locator2 <View Message Processor> tid=0x4d] Admitting member <Zachary-Hansen-MacBook-pro(server3:52417)<v4>:29063>. Now there are 5 non-admin member(s).
+
+[info 2015/07/16 11:31:47.137 PDT locator2 <DM-MemberEventInvoker> tid=0x20] ManagementMembershipListener member joined .. Zachary-Hansen-MacBook-pro(server3:52417)<v4>:29063
+
+[info 2015/07/16 11:31:47.164 PDT locator2 <Pooled High Priority Message Processor 1> tid=0x34] Member Zachary-Hansen-MacBook-pro(server3:52417)<v4>:29063 is equivalent or in the same redundancy zone.
+
+[info 2015/07/16 11:31:47.991 PDT locator2 <locator request thread[1]> tid=0x2d] Receieved request for configuration  : ConfigurationRequest for groups : 
+   cluster[cluster]
+
+[info 2015/07/16 11:31:47.992 PDT locator2 <locator request thread[1]> tid=0x2d] Building up configuration response with following configurations
+
+[info 2015/07/16 11:34:50.692 PDT locator2 <Function Execution Processor1> tid=0x4b] Received GFSH shutdown. Shuting down member Zachary-Hansen-MacBook-pro(locator2:52413:locator)<v1>:53079 after 0 millis ...
+
+[info 2015/07/16 11:34:50.706 PDT locator2 <Function Execution Processor1> tid=0x4b] GemFireCache[id = 27362884; isClosing = true; isShutDownAll = false; closingGatewayHubsByShutdownAll = false; created = Thu Jul 16 11:31:40 PDT 2015; server = false; copyOnRead = false; lockLease = 120; lockTimeout = 60]: Now closing.
+
+[info 2015/07/16 11:34:50.721 PDT locator2 <Function Execution Processor1> tid=0x4b] Resetting original MemoryPoolMXBean heap threshold bytes 0 on pool CMS Old Gen
+
+[info 2015/07/16 11:34:50.731 PDT locator2 <Function Execution Processor1> tid=0x4b] closing DiskStore[cluster_config]
+
+[info 2015/07/16 11:34:50.732 PDT locator2 <Function Execution Processor1> tid=0x4b] Unlocked disk store cluster_config
+
+[info 2015/07/16 11:34:50.735 PDT locator2 <com.gemstone.gemfire.distributed.internal.InternalLocator$2@44821a96> tid=0x7f] Stopping Distribution Locator on Zachary-Hansen-MacBook-pro.local[41112]
+
+[info 2015/07/16 11:34:50.737 PDT locator2 <Distribution Locator on Zachary-Hansen-MacBook-pro.local[41112]> tid=0x13] Closing locator's cache
+
+[info 2015/07/16 11:34:50.737 PDT locator2 <com.gemstone.gemfire.distributed.internal.InternalLocator$2@44821a96> tid=0x7f] Distribution Locator on Zachary-Hansen-MacBook-pro.local[41112]  is stopped
+
+[info 2015/07/16 11:34:50.738 PDT locator2 <Function Execution Processor1> tid=0x4b] Shutting down DistributionManager Zachary-Hansen-MacBook-pro(locator2:52413:locator)<v1>:53079. 
+
+[info 2015/07/16 11:36:22.901 PDT locator2 <main> tid=0x1] 
+  ---------------------------------------------------------------------------
+  
+    Copyright (C) 1997-2014 Pivotal Software, Inc. All rights reserved. This
+    product is protected by U.S. and international copyright and intellectual
+    property laws. Pivotal products are covered by one or more patents listed
+    at http://www.pivotal.io/patents.  Pivotal is a registered trademark
+    of trademark of Pivotal Software, Inc. in the United States and/or other
+    jurisdictions.  All other marks and names mentioned herein may be
+    trademarks of their respective companies.
+  
+  ---------------------------------------------------------------------------
+  Java version:   8.0.0 build 48319 07/31/2014 17:26:09 PDT javac 1.6.0_26
+  Native version: native code unavailable
+  Source revision: 48319
+  Source repository: gemfire/branches/cedar_dev_Oct12
+  Running on: Zachary-Hansen-MacBook-pro.local/192.168.1.134, 8 cpu(s), x86_64 Mac OS X 10.9.5
+  Process ID: 52493
+  User: zhansen
+  Current dir: /Users/zhansen/Documents/GemFire-Developer-8.0.a.RELEASE/workspace/social-media-gemfire/locator2
+  Home dir: /Users/zhansen
+  Command Line Parameters:
+    -Dgemfire.default.locators=192.168.1.134[41111]
+    -DgemfirePropertyFile=/Users/zhansen/Documents/GemFire-Developer-8.0.a.RELEASE/workspace/social-media-gemfire/gemfire.properties
+    -Dgemfire.enable-cluster-configuration=true
+    -Dgemfire.load-cluster-configuration-from-dir=false
+    -Xms50m
+    -Xmx50m
+    -XX:+UseConcMarkSweepGC
+    -XX:CMSInitiatingOccupancyFraction=60
+    -Dgemfire.launcher.registerSignalHandlers=true
+    -Djava.awt.headless=true
+    -Dsun.rmi.dgc.server.gcInterval=9223372036854775806
+  Class Path:
+    /Applications/GemFire-Developer-8.0.a.RELEASE/Pivotal_GemFire_800_b48319_Linux/lib/locator-dependencies.jar
+  Library Path:
+    /Users/zhansen/Library/Java/Extensions
+    /Library/Java/Extensions
+    /Network/Library/Java/Extensions
+    /System/Library/Java/Extensions
+    /usr/lib/java
+    .
+  System Properties:
+      Locator.forceLocatorDMType = true
+      awt.toolkit = sun.lwawt.macosx.LWCToolkit
+      file.encoding = UTF-8
+      file.encoding.pkg = sun.io
+      file.separator = /
+      ftp.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+      gemfire.default.locators = 192.168.1.134[41111]
+      gemfire.enable-cluster-configuration = true
+      gemfire.launcher.registerSignalHandlers = true
+      gemfire.load-cluster-configuration-from-dir = false
+      gemfirePropertyFile = /Users/zhansen/Documents/GemFire-Developer-8.0.a.RELEASE/workspace/social-media-gemfire/gemfire.properties
+      gopherProxySet = false
+      http.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+      java.awt.graphicsenv = sun.awt.CGraphicsEnvironment
+      java.awt.headless = true
+      java.awt.printerjob = sun.lwawt.macosx.CPrinterJob
+      java.class.version = 52.0
+      java.endorsed.dirs = /Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/endorsed
+      java.ext.dirs = /Users/zhansen/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java
+      java.home = /Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre
+      java.io.tmpdir = /var/folders/wh/29_3ztds0rdg7yx4nvrcfnhr0000gp/T/
+      java.runtime.name = Java(TM) SE Runtime Environment
+      java.runtime.version = 1.8.0_45-b14
+      java.specification.name = Java Platform API Specification
+      java.specification.vendor = Oracle Corporation
+      java.specification.version = 1.8
+      java.vendor = Oracle Corporation
+      java.vendor.url = http://java.oracle.com/
+      java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+      java.version = 1.8.0_45
+      java.vm.info = mixed mode
+      java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+      java.vm.specification.name = Java Virtual Machine Specification
+      java.vm.specification.vendor = Oracle Corporation
+      java.vm.specification.version = 1.8
+      java.vm.vendor = Oracle Corporation
+      java.vm.version = 25.45-b02
+      jna.platform.library.path = /usr/lib:/usr/lib
+      jnidispatch.path = /var/folders/wh/29_3ztds0rdg7yx4nvrcfnhr0000gp/T/jna--323296607/jna8009124049520815064.tmp
+      line.separator = 
+  
+      os.version = 10.9.5
+      path.separator = :
+      socksNonProxyHosts = local|*.local|169.254/16|*.169.254/16
+      sun.arch.data.model = 64
+      sun.boot.class.path = /Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/classes
+      sun.boot.library.path = /Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib
+      sun.cpu.endian = little
+      sun.cpu.isalist = 
+      sun.io.unicode.encoding = UnicodeBig
+      sun.java.command = com.gemstone.gemfire.distributed.LocatorLauncher start locator2 --port=41112 --redirect-output
+      sun.java.launcher = SUN_STANDARD
+      sun.jnu.encoding = UTF-8
+      sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+      sun.os.patch.level = unknown
+      sun.rmi.dgc.server.gcInterval = 9223372036854775806
+      user.country = US
+      user.language = en
+      user.timezone = America/Los_Angeles
+  ---------------------------------------------------------------------------
+  
+
+[info 2015/07/16 11:36:23.176 PDT locator2 <main> tid=0x1] Starting peer location for Distribution Locator on Zachary-Hansen-MacBook-pro.local[41112]
+
+[info 2015/07/16 11:36:23.181 PDT locator2 <main> tid=0x1] Starting Distribution Locator on Zachary-Hansen-MacBook-pro.local[41112]
+
+[info 2015/07/16 11:36:23.203 PDT locator2 <main> tid=0x1] Recovering state from locator41112state.dat
+
+[info 2015/07/16 11:36:23.204 PDT locator2 <main> tid=0x1] Discovery set was written with GFE 8.0
+
+[info 2015/07/16 11:36:23.206 PDT locator2 <main> tid=0x1] Initial discovery set is [mbr=Zachary-Hansen-MacBook-pro(locator1:52408:locator)<v0>:12034, mbr=Zachary-Hansen-MacBook-pro(locator2:52413:locator)<v1>:53079, mbr=Zachary-Hansen-MacBook-pro(server1:52414)<v2>:27484, mbr=Zachary-Hansen-MacBook-pro(server2:52415)<v3>:57342, mbr=Zachary-Hansen-MacBook-pro(server3:52417)<v4>:29063]
+
+[info 2015/07/16 11:36:23.208 PDT locator2 <main> tid=0x1] Zachary-Hansen-MacBook-pro.local [ 41,112 ] attempting to get state from  localhost [ 41,111 ]
+
+[info 2015/07/16 11:36:23.233 PDT locator2 <main> tid=0x1] locator localhost(null)<v0>:41111 member address is Zachary-Hansen-MacBook-pro(locator1:52479:locator)<v0>:15202
+
+[info 2015/07/16 11:36:23.233 PDT locator2 <main> tid=0x1] Initial discovery set is [mbr=Zachary-Hansen-MacBook-pro(locator1:52408:locator)<v0>:12034, mbr=Zachary-Hansen-MacBook-pro(locator2:52413:locator)<v1>:53079, mbr=Zachary-Hansen-MacBook-pro(server1:52414)<v2>:27484, mbr=Zachary-Hansen-MacBook-pro(server2:52415)<v3>:57342, mbr=Zachary-Hansen-MacBook-pro(server3:52417)<v4>:29063, mbr=Zachary-Hansen-MacBook-pro(locator1:52479:locator):15202]
+
+[info 2015/07/16 11:36:24.235 PDT locator2 <main> tid=0x1] Starting distributed system
+
+[config 2015/07/16 11:36:24.240 PDT locator2 <main> tid=0x1] Startup Configuration:
+   ### GemFire Properties defined with system property ###
+  enable-cluster-configuration=true
+  load-cluster-configuration-from-dir=false
+  ### GemFire Properties defined with api ###
+  cache-xml-file=
+  locators=localhost[41111],localhost[41112],192.168.1.134[41112]
+  name=locator2
+  ### GemFire Properties defined with file:/Users/zhansen/Documents/GemFire-Developer-8.0.a.RELEASE/workspace/social-media-gemfire/gemfire.properties ###
+  log-level=config
+  mcast-port=0
+  ### GemFire Properties defined with launcher ###
+  log-file=locator2.log
+  ### GemFire Properties using default values ###
+  ack-severe-alert-threshold=0
+  ack-wait-threshold=15
+  archive-disk-space-limit=0
+  archive-file-size-limit=0
+  async-distribution-timeout=0
+  async-max-queue-size=8
+  async-queue-timeout=60000
+  bind-address=
+  cluster-ssl-ciphers=any
+  cluster-ssl-enabled=false
+  cluster-ssl-keystore=
+  cluster-ssl-keystore-password=
+  cluster-ssl-keystore-type=
+  cluster-ssl-protocols=any
+  cluster-ssl-require-authentication=true
+  cluster-ssl-truststore=
+  cluster-ssl-truststore-password=
+  conflate-events=server
+  conserve-sockets=true
+  delta-propagation=true
+  deploy-working-dir=.
+  disable-auto-reconnect=false
+  disable-tcp=false
+  distributed-system-id=-1
+  durable-client-id=
+  durable-client-timeout=300
+  enable-network-partition-detection=false
+  enable-time-statistics=false
+  enforce-unique-host=false
+  gateway-ssl-ciphers=any
+  gateway-ssl-enabled=false
+  gateway-ssl-keystore=
+  gateway-ssl-keystore-password=
+  gateway-ssl-keystore-type=
+  gateway-ssl-protocols=any
+  gateway-ssl-require-authentication=true
+  gateway-ssl-truststore=
+  gateway-ssl-truststore-password=
+  groups=
+  http-service-bind-address=
+  http-service-port=7070
+  jmx-manager=true
+  jmx-manager-access-file=
+  jmx-manager-bind-address=
+  jmx-manager-hostname-for-clients=
+  jmx-manager-http-port=7070
+  jmx-manager-password-file=
+  jmx-manager-port=1099
+  jmx-manager-ssl=false
+  jmx-manager-ssl-ciphers=any
+  jmx-manager-ssl-enabled=false
+  jmx-manager-ssl-keystore=
+  jmx-manager-ssl-keystore-password=
+  jmx-manager-ssl-keystore-type=
+  jmx-manager-ssl-protocols=any
+  jmx-manager-ssl-require-authentication=true
+  jmx-manager-ssl-truststore=
+  jmx-manager-ssl-truststore-password=
+  jmx-manager-start=false
+  jmx-manager-update-rate=2000
+  license-application-cache=
+  license-data-management=
+  license-server-timeout=10000
+  license-working-dir=
+  log-disk-space-limit=0
+  log-file-size-limit=0
+  max-num-reconnect-tries=3
+  max-wait-time-reconnect=60000
+  mcast-address=239.192.81.1
+  mcast-flow-control=1048576, 0.25, 5000
+  mcast-recv-buffer-size=1048576
+  mcast-send-buffer-size=65535
+  mcast-ttl=32
+  member-timeout=5000
+  membership-port-range=1024-65535
+  memcached-port=0
+  memcached-protocol=ASCII
+  redundancy-zone=
+  remote-locators=
+  remove-unresponsive-client=false
+  roles=
+  security-=
+  security-client-accessor=
+  security-client-accessor-pp=
+  security-client-auth-init=
+  security-client-authenticator=
+  security-client-dhalgo=
+  security-log-file=
+  security-log-level=config
+  security-peer-auth-init=
+  security-peer-authenticator=
+  security-peer-verifymember-timeout=1000
+  server-bind-address=
+  server-ssl-ciphers=any
+  server-ssl-enabled=false
+  server-ssl-keystore=
+  server-ssl-keystore-password=
+  server-ssl-keystore-type=
+  server-ssl-protocols=any
+  server-ssl-require-authentication=true
+  server-ssl-truststore=
+  server-ssl-truststore-password=
+  socket-buffer-size=32768
+  socket-lease-time=60000
+  ssl-ciphers=any
+  ssl-enabled=false
+  ssl-protocols=any
+  ssl-require-authentication=true
+  start-dev-rest-api=false
+  start-locator=
+  statistic-archive-file=
+  statistic-sample-rate=1000
+  statistic-sampling-enabled=true
+  tcp-port=0
+  udp-fragment-size=60000
+  udp-recv-buffer-size=1048576
+  udp-send-buffer-size=65535
+  use-cluster-configuration=true
+  user-command-packages=
+  writable-working-dir=
+  
+
+[info 2015/07/16 11:36:24.294 PDT locator2 <main> tid=0x1] GemFire P2P Listener started on  tcp:///192.168.1.134:28489
+
+[info 2015/07/16 11:36:24.356 PDT locator2 <PingSender> tid=0x2c] locator localhost(null)<v0>:41112 member address is Zachary-Hansen-MacBook-pro(locator2:52493:locator):29948
+
+[info 2015/07/16 11:36:24.358 PDT locator2 <PingSender> tid=0x2c] locator localhost(null)<v0>:41111 member address is Zachary-Hansen-MacBook-pro(locator1:52479:locator)<v0>:15202
+
+[info 2015/07/16 11:36:24.360 PDT locator2 <PingSender> tid=0x2c] locator Zachary-Hansen-MacBook-pro(null)<v0>:41112 member address is Zachary-Hansen-MacBook-pro(locator2:52493:locator):29948
+
+[info 2015/07/16 11:36:24.360 PDT locator2 <main> tid=0x1] Attempting to join distributed system whose membership coordinator is Zachary-Hansen-MacBook-pro(locator1:52479:locator)<v0>:15202 using membership ID Zachary-Hansen-MacBook-pro(locator2:52493:locator):29948
+
+[info 2015/07/16 11:36:24.527 PDT locator2 <FD_SOCK Ping thread> tid=0x2e] GemFire failure detection is now monitoring Zachary-Hansen-MacBook-pro(locator1:52479:locator)<v0>:15202
+
+[info 2015/07/16 11:36:24.528 PDT locator2 <main> tid=0x1] Entered into membership in group GF7 with ID Zachary-Hansen-MacBook-pro(locator2:52493:locator)<v1>:29948.
+
+[info 2015/07/16 11:36:24.529 PDT locator2 <main> tid=0x1] Starting DistributionManager Zachary-Hansen-MacBook-pro(locator2:52493:locator)<v1>:29948. 
+
+[info 2015/07/16 11:36:24.529 PDT locator2 <main> tid=0x1] Initial (membershipManager) view =  [Zachary-Hansen-MacBook-pro(locator1:52479:locator)<v0>:15202, Zachary-Hansen-MacBook-pro(locator2:52493:locator)<v1>:29948]
+
+[info 2015/07/16 11:36:24.530 PDT locator2 <main> tid=0x1] Admitting member <Zachary-Hansen-MacBook-pro(locator1:52479:locator)<v0>:15202>. Now there are 1 non-admin member(s).
+
+[info 2015/07/16 11:36:24.530 PDT locator2 <main> tid=0x1] Admitting member <Zachary-Hansen-MacBook-pro(locator2:52493:locator)<v1>:29948>. Now there are 2 non-admin member(s).
+
+[info 2015/07/16 11:36:24.556 PDT locator2 <P2P message reader for Zachary-Hansen-MacBook-pro(locator1:52479:locator)<v0>:15202 shared unordered uid=1 port=65231> tid=0x31] Member Zachary-Hansen-MacBook-pro(locator1:52479:locator)<v0>:15202 is equivalent or in the same redundancy zone.
+
+[info 2015/07/16 11:36:24.556 PDT locator2 <main> tid=0x1] DistributionManager Zachary-Hansen-MacBook-pro(locator2:52493:locator)<v1>:29948 started on localhost[41112],localhost[41111],Zachary-Hansen-MacBook-pro.local[41112]. There were 1 other DMs. others: [Zachary-Hansen-MacBook-pro(locator1:52479:locator)<v0>:15202]   (locator)
+
+[info 2015/07/16 11:36:24.564 PDT locator2 <Thread-10 StatSampler> tid=0x36] Disabling statistic archival.
+
+[info 2015/07/16 11:36:24.565 PDT locator2 <main> tid=0x1] Creating cache for locator.
+
+[info 2015/07/16 11:36:24.581 PDT locator2 <Pooled Message Processor 1> tid=0x37] Adding alert listener Zachary-Hansen-MacBook-pro(locator1:52479:locator)<v0>:15202 level=1000
+
+[info 2015/07/16 11:36:24.674 PDT locator2 <main> tid=0x1] Initializing region _monitoringRegion_192.168.1.134<v1>29948
+
+[info 2015/07/16 11:36:24.683 PDT locator2 <main> tid=0x1] Region _monitoringRegion_192.168.1.134<v1>29948 requesting initial image from Zachary-Hansen-MacBook-pro(locator1:52479:locator)<v0>:15202
+
+[info 2015/07/16 11:36:24.691 PDT locator2 <main> tid=0x1] _monitoringRegion_192.168.1.134<v1>29948 is done getting image from Zachary-Hansen-MacBook-pro(locator1:52479:locator)<v0>:15202. isDeltaGII is false
+
+[info 2015/07/16 11:36:24.692 PDT locator2 <main> tid=0x1] Initialization of region _monitoringRegion_192.168.1.134<v1>29948 completed
+
+[info 2015/07/16 11:36:25.381 PDT locator2 <main> tid=0x1] SharedConfigStatusRequestHandler installed
+
+[info 2015/07/16 11:36:25.382 PDT locator2 <main> tid=0x1] Locator started on  192.168.1.134[41112]
+
+[info 2015/07/16 11:36:25.382 PDT locator2 <main> tid=0x1] Starting server location for Distribution Locator on Zachary-Hansen-MacBook-pro.local[41112]
+Locator in /Users/zhansen/Documents/GemFire-Developer-8.0.a.RELEASE/workspace/social-media-gemfire/locator2 on 192.168.1.134[41112] as locator2 is currently online.
+Process ID: 52493
+Uptime: 2 seconds
+GemFire Version: 8.0.0
+Java Version: 1.8.0_45
+Log File: /Users/zhansen/Documents/GemFire-Developer-8.0.a.RELEASE/workspace/social-media-gemfire/locator2/locator2.log
+JVM Arguments: -Dgemfire.default.locators=192.168.1.134[41111] -DgemfirePropertyFile=/Users/zhansen/Documents/GemFire-Developer-8.0.a.RELEASE/workspace/social-media-gemfire/gemfire.properties -Dgemfire.enable-cluster-configuration=true -Dgemfire.load-cluster-configuration-from-dir=false -Xms50m -Xmx50m -XX:+UseConcMarkSweepGC -XX:CMSInitiatingOccupancyFraction=60 -Dgemfire.launcher.registerSignalHandlers=true -Djava.awt.headless=true -Dsun.rmi.dgc.server.gcInterval=9223372036854775806
+Class-Path: /Applications/GemFire-Developer-8.0.a.RELEASE/Pivotal_GemFire_800_b48319_Linux/lib/locator-dependencies.jar
+[info 2015/07/16 11:36:25.396 PDT locator2 <WAN Locator Discovery Thread> tid=0x43] Locator discovery task exchanged locator information Zachary-Hansen-MacBook-pro.local[41112] with localhost[41111].
+
+[info 2015/07/16 11:36:25.396 PDT locator2 <WAN Locator Discovery Thread> tid=0x44] Locator discovery task exchanged locator information Zachary-Hansen-MacBook-pro.local[41112] with localhost[41112].
+
+[info 2015/07/16 11:36:25.398 PDT locator2 <Pooled Message Processor 1> tid=0x37] Locked disk store cluster_config for exclusive access in directory: /Users/zhansen/Documents/GemFire-Developer-8.0.a.RELEASE/workspace/social-media-gemfire/locator2/ConfigDiskDir_locator2
+
+[info 2015/07/16 11:36:25.422 PDT locator2 <Pooled Message Processor 1> tid=0x37] Recovered disk store cluster_config with unique id da7d20fae2584842-a1c2bc2c488ee1aa
+
+[info 2015/07/16 11:36:25.426 PDT locator2 <Pooled Message Processor 1> tid=0x37] Recovering oplog#1 /Users/zhansen/Documents/GemFire-Developer-8.0.a.RELEASE/workspace/social-media-gemfire/locator2/ConfigDiskDir_locator2/BACKUPcluster_config_1.drf for disk store cluster_config.
+
+[info 2015/07/16 11:36:25.428 PDT locator2 <Pooled Message Processor 1> tid=0x37] Recovering oplog#1 /Users/zhansen/Documents/GemFire-Developer-8.0.a.RELEASE/workspace/social-media-gemfire/locator2/ConfigDiskDir_locator2/BACKUPcluster_config_1.crf for disk store cluster_config.
+
+[info 2015/07/16 11:36:25.428 PDT locator2 <Pooled Message Processor 1> tid=0x37] recovery oplog load took 2 ms
+
+[info 2015/07/16 11:36:25.429 PDT locator2 <Oplog Delete Task> tid=0x47] Deleted oplog#1 crf for disk store cluster_config.
+
+[info 2015/07/16 11:36:25.430 PDT locator2 <Oplog Delete Task> tid=0x47] Deleted oplog#1 drf for disk store cluster_config.
+
+[info 2015/07/16 11:36:25.430 PDT locator2 <Pooled Message Processor 1> tid=0x37] Created oplog#2 drf for disk store cluster_config.
+
+[info 2015/07/16 11:36:25.435 PDT locator2 <Pooled Message Processor 1> tid=0x37] Created oplog#2 crf for disk store cluster_config.
+
+[info 2015/07/16 11:36:25.443 PDT locator2 <Pooled Message Processor 1> tid=0x37] recovery region initialization took 15 ms
+
+[info 2015/07/16 11:36:25.447 PDT locator2 <Pooled Message Processor 1> tid=0x37] Initializing region _ConfigurationRegion
+
+[info 2015/07/16 11:36:25.455 PDT locator2 <Pooled Message Processor 1> tid=0x37] Region /_ConfigurationRegion recovered with EndGII flag, rvv is RegionVersionVector[da7d20fae2584842-a1c2bc2c488ee1aa={rv0 gc0 localVersion=0 local exceptions=[]} others={cfc4029ea99e4375-8638b4a48273dbda={rv0 bsv0 bs=[0]}, gc={}]. recovered rvv is RegionVersionVector[da7d20fae2584842-a1c2bc2c488ee1aa={rv0 gc0 localVersion=0 local exceptions=[]} others={cfc4029ea99e4375-8638b4a48273dbda={rv0 bsv0 bs=[0]}, gc={}]. Do delta GII
+
+[info 2015/07/16 11:36:25.456 PDT locator2 <Pooled Message Processor 1> tid=0x37] Region _ConfigurationRegion requesting initial image from Zachary-Hansen-MacBook-pro(locator1:52479:locator)<v0>:15202
+
+[info 2015/07/16 11:36:25.457 PDT locator2 <Pooled Message Processor 1> tid=0x37] _ConfigurationRegion is done getting image from Zachary-Hansen-MacBook-pro(locator1:52479:locator)<v0>:15202. isDeltaGII is true
+
+[info 2015/07/16 11:36:25.457 PDT locator2 <Pooled Message Processor 1> tid=0x37] Region _ConfigurationRegion initialized persistent id: /192.168.1.134:/Users/zhansen/Documents/GemFire-Developer-8.0.a.RELEASE/workspace/social-media-gemfire/locator2/ConfigDiskDir_locator2 created at timestamp 1437071785445 version 0 diskStoreId da7d20fae2584842-a1c2bc2c488ee1aa name locator2 with data from Zachary-Hansen-MacBook-pro(locator1:52479:locator)<v0>:15202.
+
+[info 2015/07/16 11:36:25.458 PDT locator2 <Pooled Message Processor 1> tid=0x37] Initialization of region _ConfigurationRegion completed
+
+[info 2015/07/16 11:36:25.465 PDT locator2 <Pooled Message Processor 1> tid=0x37] Completed writing the shared configuration to 'cluster_config' directory
+
+[info 2015/07/16 11:36:25.466 PDT locator2 <Pooled Message Processor 1> tid=0x37] Getting Jar files from other locators
+
+[info 2015/07/16 11:36:25.480 PDT locator2 <Pooled Message Processor 1> tid=0x37] No deployed jars found on other locators.
+
+[info 2015/07/16 11:36:25.482 PDT locator2 <Pooled Message Processor 1> tid=0x37] ConfigRequestHandler installed
+
+[info 2015/07/16 11:36:25.482 PDT locator2 <Pooled Message Processor 1> tid=0x37] Cluster configuration service start up completed successfully and is now running ....
+
+[info 2015/07/16 11:36:26.849 PDT locator2 <UDP ucast receiver> tid=0x28] Membership: received new view  [Zachary-Hansen-MacBook-pro(locator1:52479:locator)<v0>:15202|2] [Zachary-Hansen-MacBook-pro(locator1:52479:locator)<v0>:15202/10073, Zachary-Hansen-MacBook-pro(locator2:52493:locator)<v1>:29948/28489, Zachary-Hansen-MacBook-pro(server1:52494)<v2>:49830/8678]
+
+[info 2015/07/16 11:36:26.849 PDT locator2 <UDP ucast receiver> tid=0x28] Membership: lead member is now Zachary-Hansen-MacBook-pro(server1:52494)<v2>:49830
+
+[info 2015/07/16 11:36:26.851 PDT locator2 <FD_SOCK Ping thread> tid=0x2e] GemFire failure detection is now monitoring Zachary-Hansen-MacBook-pro(server1:52494)<v2>:49830
+
+[info 2015/07/16 11:36:26.853 PDT locator2 <View Message Processor> tid=0x4e] Admitting member <Zachary-Hansen-MacBook-pro(server1:52494)<v2>:49830>. Now there are 3 non-admin member(s).
+
+[info 2015/07/16 11:36:26.854 PDT locator2 <DM-MemberEventInvoker> tid=0x20] ManagementMembershipListener member joined .. Zachary-Hansen-MacBook-pro(server1:52494)<v2>:49830
+
+[info 2015/07/16 11:36:26.875 PDT locator2 <Pooled High Priority Message Processor 1> tid=0x34] Member Zachary-Hansen-MacBook-pro(server1:52494)<v2>:49830 is equivalent or in the same redundancy zone.
+
+[info 2015/07/16 11:36:27.706 PDT locator2 <locator request thread[1]> tid=0x2d] Receieved request for configuration  : ConfigurationRequest for groups : 
+   cluster[cluster]
+
+[info 2015/07/16 11:36:27.708 PDT locator2 <locator request thread[1]> tid=0x2d] Building up configuration response with following configurations
+
+[info 2015/07/16 11:36:29.273 PDT locator2 <UDP ucast receiver> tid=0x28] Membership: received new view  [Zachary-Hansen-MacBook-pro(locator1:52479:locator)<v0>:15202|3] [Zachary-Hansen-MacBook-pro(locator1:52479:locator)<v0>:15202/10073, Zachary-Hansen-MacBook-pro(locator2:52493:locator)<v1>:29948/28489, Zachary-Hansen-MacBook-pro(server1:52494)<v2>:49830/8678, Zachary-Hansen-MacBook-pro(server2:52500)<v3>:24706/62750]
+
+[info 2015/07/16 11:36:29.275 PDT locator2 <View Message Processor> tid=0x4e] Admitting member <Zachary-Hansen-MacBook-pro(server2:52500)<v3>:24706>. Now there are 4 non-admin member(s).
+
+[info 2015/07/16 11:36:29.275 PDT locator2 <DM-MemberEventInvoker> tid=0x20] ManagementMembershipListener member joined .. Zachary-Hansen-MacBook-pro(server2:52500)<v3>:24706
+
+[info 2015/07/16 11:36:29.302 PDT locator2 <Pooled High Priority Message Processor 1> tid=0x34] Member Zachary-Hansen-MacBook-pro(server2:52500)<v3>:24706 is equivalent or in the same redundancy zone.
+
+[info 2015/07/16 11:36:30.201 PDT locator2 <locator request thread[1]> tid=0x2d] Receieved request for configuration  : ConfigurationRequest for groups : 
+   cluster[cluster]
+
+[info 2015/07/16 11:36:30.202 PDT locator2 <locator request thread[1]> tid=0x2d] Building up configuration response with following configurations
+
+[info 2015/07/16 11:36:31.640 PDT locator2 <UDP ucast receiver> tid=0x28] Membership: received new view  [Zachary-Hansen-MacBook-pro(locator1:52479:locator)<v0>:15202|4] [Zachary-Hansen-MacBook-pro(locator1:52479:locator)<v0>:15202/10073, Zachary-Hansen-MacBook-pro(locator2:52493:locator)<v1>:29948/28489, Zachary-Hansen-MacBook-pro(server1:52494)<v2>:49830/8678, Zachary-Hansen-MacBook-pro(server2:52500)<v3>:24706/62750, Zachary-Hansen-MacBook-pro(server3:52501)<v4>:51595/49917]
+
+[info 2015/07/16 11:36:31.643 PDT locator2 <View Message Processor> tid=0x4e] Admitting member <Zachary-Hansen-MacBook-pro(server3:52501)<v4>:51595>. Now there are 5 non-admin member(s).
+
+[info 2015/07/16 11:36:31.643 PDT locator2 <DM-MemberEventInvoker> tid=0x20] ManagementMembershipListener member joined .. Zachary-Hansen-MacBook-pro(server3:52501)<v4>:51595
+
+[info 2015/07/16 11:36:31.668 PDT locator2 <Pooled High Priority Message Processor 1> tid=0x34] Member Zachary-Hansen-MacBook-pro(server3:52501)<v4>:51595 is equivalent or in the same redundancy zone.
+
+[info 2015/07/16 11:36:32.526 PDT locator2 <locator request thread[1]> tid=0x2d] Receieved request for configuration  : ConfigurationRequest for groups : 
+   cluster[cluster]
+
+[info 2015/07/16 11:36:32.527 PDT locator2 <locator request thread[1]> tid=0x2d] Building up configuration response with following configurations
+
+[info 2015/07/16 12:58:59.581 PDT locator2 <Function Execution Processor1> tid=0x4c] Received GFSH shutdown. Shuting down member Zachary-Hansen-MacBook-pro(locator2:52493:locator)<v1>:29948 after 0 millis ...
+
+[info 2015/07/16 12:58:59.595 PDT locator2 <Function Execution Processor1> tid=0x4c] GemFireCache[id = 2122049087; isClosing = true; isShutDownAll = false; closingGatewayHubsByShutdownAll = false; created = Thu Jul 16 11:36:24 PDT 2015; server = false; copyOnRead = false; lockLease = 120; lockTimeout = 60]: Now closing.
+
+[info 2015/07/16 12:58:59.614 PDT locator2 <Function Execution Processor1> tid=0x4c] Resetting original MemoryPoolMXBean heap threshold bytes 0 on pool CMS Old Gen
+
+[info 2015/07/16 12:58:59.628 PDT locator2 <Function Execution Processor1> tid=0x4c] closing DiskStore[cluster_config]
+
+[info 2015/07/16 12:58:59.630 PDT locator2 <Function Execution Processor1> tid=0x4c] Unlocked disk store cluster_config
+
+[info 2015/07/16 12:58:59.639 PDT locator2 <com.gemstone.gemfire.distributed.internal.InternalLocator$2@1ba9117e> tid=0x439] Stopping Distribution Locator on Zachary-Hansen-MacBook-pro.local[41112]
+
+[info 2015/07/16 12:58:59.645 PDT locator2 <Distribution Locator on Zachary-Hansen-MacBook-pro.local[41112]> tid=0x13] Closing locator's cache
+
+[info 2015/07/16 12:58:59.646 PDT locator2 <com.gemstone.gemfire.distributed.internal.InternalLocator$2@1ba9117e> tid=0x439] Distribution Locator on Zachary-Hansen-MacBook-pro.local[41112]  is stopped
+
+[info 2015/07/16 13:21:00.096 PDT locator2 <main> tid=0x1] 
+  ---------------------------------------------------------------------------
+  
+    Copyright (C) 1997-2014 Pivotal Software, Inc. All rights reserved. This
+    product is protected by U.S. and international copyright and intellectual
+    property laws. Pivotal products are covered by one or more patents listed
+    at http://www.pivotal.io/patents.  Pivotal is a registered trademark
+    of trademark of Pivotal Software, Inc. in the United States and/or other
+    jurisdictions.  All other marks and names mentioned herein may be
+    trademarks of their respective companies.
+  
+  ---------------------------------------------------------------------------
+  Java version:   8.0.0 build 48319 07/31/2014 17:26:09 PDT javac 1.6.0_26
+  Native version: native code unavailable
+  Source revision: 48319
+  Source repository: gemfire/branches/cedar_dev_Oct12
+  Running on: Zachary-Hansen-MacBook-pro.local/192.168.1.134, 8 cpu(s), x86_64 Mac OS X 10.9.5
+  Process ID: 53923
+  User: zhansen
+  Current dir: /Users/zhansen/Documents/GemFire-Developer-8.0.a.RELEASE/workspace/social-media-gemfire/locator2
+  Home dir: /Users/zhansen
+  Command Line Parameters:
+    -Dgemfire.default.locators=192.168.1.134[41111]
+    -DgemfirePropertyFile=/Users/zhansen/Documents/GemFire-Developer-8.0.a.RELEASE/workspace/social-media-gemfire/gemfire.properties
+    -Dgemfire.enable-cluster-configuration=true
+    -Dgemfire.load-cluster-configuration-from-dir=false
+    -Xms50m
+    -Xmx50m
+    -XX:+UseConcMarkSweepGC
+    -XX:CMSInitiatingOccupancyFraction=60
+    -Dgemfire.launcher.registerSignalHandlers=true
+    -Djava.awt.headless=true
+    -Dsun.rmi.dgc.server.gcInterval=9223372036854775806
+  Class Path:
+    /Applications/GemFire-Developer-8.0.a.RELEASE/Pivotal_GemFire_800_b48319_Linux/lib/locator-dependencies.jar
+  Library Path:
+    /Users/zhansen/Library/Java/Extensions
+    /Library/Java/Extensions
+    /Network/Library/Java/Extensions
+    /System/Library/Java/Extensions
+    /usr/lib/java
+    .
+  System Properties:
+      Locator.forceLocatorDMType = true
+      awt.toolkit = sun.lwawt.macosx.LWCToolkit
+      file.encoding = UTF-8
+      file.encoding.pkg = sun.io
+      file.separator = /
+      ftp.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+      gemfire.default.locators = 192.168.1.134[41111]
+      gemfire.enable-cluster-configuration = true
+      gemfire.launcher.registerSignalHandlers = true
+      gemfire.load-cluster-configuration-from-dir = false
+      gemfirePropertyFile = /Users/zhansen/Documents/GemFire-Developer-8.0.a.RELEASE/workspace/social-media-gemfire/gemfire.properties
+      gopherProxySet = false
+      http.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+      java.awt.graphicsenv = sun.awt.CGraphicsEnvironment
+      java.awt.headless = true
+      java.awt.printerjob = sun.lwawt.macosx.CPrinterJob
+      java.class.version = 52.0
+      java.endorsed.dirs = /Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/endorsed
+      java.ext.dirs = /Users/zhansen/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java
+      java.home = /Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre
+      java.io.tmpdir = /var/folders/wh/29_3ztds0rdg7yx4nvrcfnhr0000gp/T/
+      java.runtime.name = Java(TM) SE Runtime Environment
+      java.runtime.version = 1.8.0_45-b14
+      java.specification.name = Java Platform API Specification
+      java.specification.vendor = Oracle Corporation
+      java.specification.version = 1.8
+      java.vendor = Oracle Corporation
+      java.vendor.url = http://java.oracle.com/
+      java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+      java.version = 1.8.0_45
+      java.vm.info = mixed mode
+      java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+      java.vm.specification.name = Java Virtual Machine Specification
+      java.vm.specification.vendor = Oracle Corporation
+      java.vm.specification.version = 1.8
+      java.vm.vendor = Oracle Corporation
+      java.vm.version = 25.45-b02
+      jna.platform.library.path = /usr/lib:/usr/lib
+      jnidispatch.path = /var/folders/wh/29_3ztds0rdg7yx4nvrcfnhr0000gp/T/jna--323296607/jna2921579838234754949.tmp
+      line.separator = 
+  
+      os.version = 10.9.5
+      path.separator = :
+      socksNonProxyHosts = local|*.local|169.254/16|*.169.254/16
+      sun.arch.data.model = 64
+      sun.boot.class.path = /Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/classes
+      sun.boot.library.path = /Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib
+      sun.cpu.endian = little
+      sun.cpu.isalist = 
+      sun.io.unicode.encoding = UnicodeBig
+      sun.java.command = com.gemstone.gemfire.distributed.LocatorLauncher start locator2 --port=41112 --redirect-output
+      sun.java.launcher = SUN_STANDARD
+      sun.jnu.encoding = UTF-8
+      sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+      sun.os.patch.level = unknown
+      sun.rmi.dgc.server.gcInterval = 9223372036854775806
+      user.country = US
+      user.language = en
+      user.timezone = America/Los_Angeles
+  ---------------------------------------------------------------------------
+  
+
+[info 2015/07/16 13:21:00.340 PDT locator2 <main> tid=0x1] Starting peer location for Distribution Locator on Zachary-Hansen-MacBook-pro.local[41112]
+
+[info 2015/07/16 13:21:00.344 PDT locator2 <main> tid=0x1] Starting Distribution Locator on Zachary-Hansen-MacBook-pro.local[41112]
+
+[info 2015/07/16 13:21:00.355 PDT locator2 <main> tid=0x1] Recovering state from locator41112state.dat
+
+[info 2015/07/16 13:21:00.357 PDT locator2 <main> tid=0x1] Discovery set was written with GFE 8.0
+
+[info 2015/07/16 13:21:00.359 PDT locator2 <main> tid=0x1] Initial discovery set is [mbr=Zachary-Hansen-MacBook-pro(locator1:52479:locator)<v0>:15202, mbr=Zachary-Hansen-MacBook-pro(locator2:52493:locator)<v1>:29948, mbr=Zachary-Hansen-MacBook-pro(server1:52494)<v2>:49830, mbr=Zachary-Hansen-MacBook-pro(server2:52500)<v3>:24706, mbr=Zachary-Hansen-MacBook-pro(server3:52501)<v4>:51595]
+
+[info 2015/07/16 13:21:00.362 PDT locator2 <main> tid=0x1] Zachary-Hansen-MacBook-pro.local [ 41,112 ] attempting to get state from  localhost [ 41,111 ]
+
+[info 2015/07/16 13:21:00.396 PDT locator2 <main> tid=0x1] locator localhost(null)<v0>:41111 member address is Zachary-Hansen-MacBook-pro(locator1:53911:locator)<v0>:64876
+
+[info 2015/07/16 13:21:00.397 PDT locator2 <main> tid=0x1] Initial discovery set is [mbr=Zachary-Hansen-MacBook-pro(locator1:52479:locator)<v0>:15202, mbr=Zachary-Hansen-MacBook-pro(locator2:52493:locator)<v1>:29948, mbr=Zachary-Hansen-MacBook-pro(server1:52494)<v2>:49830, mbr=Zachary-Hansen-MacBook-pro(server2:52500)<v3>:24706, mbr=Zachary-Hansen-MacBook-pro(server3:52501)<v4>:51595, mbr=Zachary-Hansen-MacBook-pro(locator1:53911:locator):64876]
+
+[info 2015/07/16 13:21:01.399 PDT locator2 <main> tid=0x1] Starting distributed system
+
+[config 2015/07/16 13:21:01.402 PDT locator2 <main> tid=0x1] Startup Configuration:
+   ### GemFire Properties defined with system property ###
+  enable-cluster-configuration=true
+  load-cluster-configuration-from-dir=false
+  ### GemFire Properties defined with api ###
+  cache-xml-file=
+  locators=localhost[41111],localhost[41112],192.168.1.134[41112]
+  name=locator2
+  ### GemFire Properties defined with file:/Users/zhansen/Documents/GemFire-Developer-8.0.a.RELEASE/workspace/social-media-gemfire/gemfire.properties ###
+  log-level=config
+  mcast-port=0
+  ### GemFire Properties defined with launcher ###
+  log-file=locator2.log
+  ### GemFire Properties using default values ###
+  ack-severe-alert-threshold=0
+  ack-wait-threshold=15
+  archive-disk-space-limit=0
+  archive-file-size-limit=0
+  async-distribution-timeout=0
+  async-max-queue-size=8
+  async-queue-timeout=60000
+  bind-address=
+  cluster-ssl-ciphers=any
+  cluster-ssl-enabled=false
+  cluster-ssl-keystore=
+  cluster-ssl-keystore-password=
+  cluster-ssl-keystore-type=
+  cluster-ssl-protocols=any
+  cluster-ssl-require-authentication=true
+  cluster-ssl-truststore=
+  cluster-ssl-truststore-password=
+  conflate-events=server
+  conserve-sockets=true
+  delta-propagation=true
+  deploy-working-dir=.
+  disable-auto-reconnect=false
+  disable-tcp=false
+  distributed-system-id=-1
+  durable-client-id=
+  durable-client-timeout=300
+  enable-network-partition-detection=false
+  enable-time-statistics=false
+  enforce-unique-host=false
+  gateway-ssl-ciphers=any
+  gateway-ssl-enabled=false
+  gateway-ssl-keystore=
+  gateway-ssl-keystore-password=
+  gateway-ssl-keystore-type=
+  gateway-ssl-protocols=any
+  gateway-ssl-require-authentication=true
+  gateway-ssl-truststore=
+  gateway-ssl-truststore-password=
+  groups=
+  http-service-bind-address=
+  http-service-port=7070
+  jmx-manager=true
+  jmx-manager-access-file=
+  jmx-manager-bind-address=
+  jmx-manager-hostname-for-clients=
+  jmx-manager-http-port=7070
+  jmx-manager-password-file=
+  jmx-manager-port=1099
+  jmx-manager-ssl=false
+  jmx-manager-ssl-ciphers=any
+  jmx-manager-ssl-enabled=false
+  jmx-manager-ssl-keystore=
+  jmx-manager-ssl-keystore-password=
+  jmx-manager-ssl-keystore-type=
+  jmx-manager-ssl-protocols=any
+  jmx-manager-ssl-require-authentication=true
+  jmx-manager-ssl-truststore=
+  jmx-manager-ssl-truststore-password=
+  jmx-manager-start=false
+  jmx-manager-update-rate=2000
+  license-application-cache=
+  license-data-management=
+  license-server-timeout=10000
+  license-working-dir=
+  log-disk-space-limit=0
+  log-file-size-limit=0
+  max-num-reconnect-tries=3
+  max-wait-time-reconnect=60000
+  mcast-address=239.192.81.1
+  mcast-flow-control=1048576, 0.25, 5000
+  mcast-recv-buffer-size=1048576
+  mcast-send-buffer-size=65535
+  mcast-ttl=32
+  member-timeout=5000
+  membership-port-range=1024-65535
+  memcached-port=0
+  memcached-protocol=ASCII
+  redundancy-zone=
+  remote-locators=
+  remove-unresponsive-client=false
+  roles=
+  security-=
+  security-client-accessor=
+  security-client-accessor-pp=
+  security-client-auth-init=
+  security-client-authenticator=
+  security-client-dhalgo=
+  security-log-file=
+  security-log-level=config
+  security-peer-auth-init=
+  security-peer-authenticator=
+  security-peer-verifymember-timeout=1000
+  server-bind-address=
+  server-ssl-ciphers=any
+  server-ssl-enabled=false
+  server-ssl-keystore=
+  server-ssl-keystore-password=
+  server-ssl-keystore-type=
+  server-ssl-protocols=any
+  server-ssl-require-authentication=true
+  server-ssl-truststore=
+  server-ssl-truststore-password=
+  socket-buffer-size=32768
+  socket-lease-time=60000
+  ssl-ciphers=any
+  ssl-enabled=false
+  ssl-protocols=any
+  ssl-require-authentication=true
+  start-dev-rest-api=false
+  start-locator=
+  statistic-archive-file=
+  statistic-sample-rate=1000
+  statistic-sampling-enabled=true
+  tcp-port=0
+  udp-fragment-size=60000
+  udp-recv-buffer-size=1048576
+  udp-send-buffer-size=65535
+  use-cluster-configuration=true
+  user-command-packages=
+  writable-working-dir=
+  
+
+[info 2015/07/16 13:21:01.458 PDT locator2 <main> tid=0x1] GemFire P2P Listener started on  tcp:///192.168.1.134:10801
+
+[info 2015/07/16 13:21:01.520 PDT locator2 <PingSender> tid=0x2c] locator localhost(null)<v0>:41112 member address is Zachary-Hansen-MacBook-pro(locator2:53923:locator):24775
+
+[info 2015/07/16 13:21:01.522 PDT locator2 <PingSender> tid=0x2c] locator localhost(null)<v0>:41111 member address is Zachary-Hansen-MacBook-pro(locator1:53911:locator)<v0>:64876
+
+[info 2015/07/16 13:21:01.525 PDT locator2 <PingSender> tid=0x2c] locator Zachary-Hansen-MacBook-pro(null)<v0>:41112 member address is Zachary-Hansen-MacBook-pro(locator2:53923:locator):24775
+
+[info 2015/07/16 13:21:01.525 PDT locator2 <main> tid=0x1] Attempting to join distributed system whose membership coordinator is Zachary-Hansen-MacBook-pro(locator1:53911:locator)<v0>:64876 using membership ID Zachary-Hansen-MacBook-pro(locator2:53923:locator):24775
+
+[info 2015/07/16 13:21:01.690 PDT locator2 <FD_SOCK Ping thread> tid=0x2e] GemFire failure detection is now monitoring Zachary-Hansen-MacBook-pro(locator1:53911:locator)<v0>:64876
+
+[info 2015/07/16 13:21:01.691 PDT locator2 <main> tid=0x1] Entered into membership in group GF7 with ID Zachary-Hansen-MacBook-pro(locator2:53923:locator)<v1>:24775.
+
+[info 2015/07/16 13:21:01.692 PDT locator2 <main> tid=0x1] Starting DistributionManager Zachary-Hansen-MacBook-pro(locator2:53923:locator)<v1>:24775. 
+
+[info 2015/07/16 13:21:01.692 PDT locator2 <main> tid=0x1] Initial (membershipManager) view =  [Zachary-Hansen-MacBook-pro(locator1:53911:locator)<v0>:64876, Zachary-Hansen-MacBook-pro(locator2:53923:locator)<v1>:24775]
+
+[info 2015/07/16 13:21:01.693 PDT locator2 <main> tid=0x1] Admitting member <Zachary-Hansen-MacBook-pro(locator1:53911:locator)<v0>:64876>. Now there are 1 non-admin member(s).
+
+[info 2015/07/16 13:21:01.693 PDT locator2 <main> tid=0x1] Admitting member <Zachary-Hansen-MacBook-pro(locator2:53923:locator)<v1>:24775>. Now there are 2 non-admin member(s).
+
+[info 2015/07/16 13:21:01.720 PDT locator2 <P2P message reader for Zachary-Hansen-MacBook-pro(locator1:53911:locator)<v0>:64876 shared unordered uid=1 port=55367> tid=0x31] Member Zachary-Hansen-MacBook-pro(locator1:53911:locator)<v0>:64876 is equivalent or in the same redundancy zone.
+
+[info 2015/07/16 13:21:01.720 PDT locator2 <main> tid=0x1] DistributionManager Zachary-Hansen-MacBook-pro(locator2:53923:locator)<v1>:24775 started on localhost[41112],localhost[41111],Zachary-Hansen-MacBook-pro.local[41112]. There were 1 other DMs. others: [Zachary-Hansen-MacBook-pro(locator1:53911:locator)<v0>:64876]   (locator)
+
+[info 2015/07/16 13:21:01.729 PDT locator2 <Thread-10 StatSampler> tid=0x36] Disabling statistic archival.
+
+[info 2015/07/16 13:21:01.730 PDT locator2 <main> tid=0x1] Creating cache for locator.
+
+[info 2015/07/16 13:21:01.746 PDT locator2 <Pooled Message Processor 1> tid=0x38] Adding alert listener Zachary-Hansen-MacBook-pro(locator1:53911:locator)<v0>:64876 level=1000
+
+[info 2015/07/16 13:21:01.842 PDT locator2 <main> tid=0x1] Initializing region _monitoringRegion_192.168.1.134<v1>24775
+
+[info 2015/07/16 13:21:01.851 PDT locator2 <main> tid=0x1] Region _monitoringRegion_192.168.1.134<v1>24775 requesting initial image from Zachary-Hansen-MacBook-pro(locator1:53911:locator)<v0>:64876
+
+[info 2015/07/16 13:21:01.855 PDT locator2 <main> tid=0x1] _monitoringRegion_192.168.1.134<v1>24775 is done getting image from Zachary-Hansen-MacBook-pro(locator1:53911:locator)<v0>:64876. isDeltaGII is false
+
+[info 2015/07/16 13:21:01.855 PDT locator2 <main> tid=0x1] Initialization of region _monitoringRegion_192.168.1.134<v1>24775 completed
+
+[info 2015/07/16 13:21:02.603 PDT locator2 <main> tid=0x1] SharedConfigStatusRequestHandler installed
+
+[info 2015/07/16 13:21:02.604 PDT locator2 <main> tid=0x1] Locator started on  192.168.1.134[41112]
+
+[info 2015/07/16 13:21:02.604 PDT locator2 <main> tid=0x1] Starting server location for Distribution Locator on Zachary-Hansen-MacBook-pro.local[41112]
+Locator in /Users/zhansen/Documents/GemFire-Developer-8.0.a.RELEASE/workspace/social-media-gemfire/locator2 on 192.168.1.134[41112] as locator2 is currently online.
+Process ID: 53923
+Uptime: 2 seconds
+GemFire Version: 8.0.0
+Java Version: 1.8.0_45
+Log File: /Users/zhansen/Documents/GemFire-Developer-8.0.a.RELEASE/workspace/social-media-gemfire/locator2/locator2.log
+JVM Arguments: -Dgemfire.default.locators=192.168.1.134[41111] -DgemfirePropertyFile=/Users/zhansen/Documents/GemFire-Developer-8.0.a.RELEASE/workspace/social-media-gemfire/gemfire.properties -Dgemfire.enable-cluster-configuration=true -Dgemfire.load-cluster-configuration-from-dir=false -Xms50m -Xmx50m -XX:+UseConcMarkSweepGC -XX:CMSInitiatingOccupancyFraction=60 -Dgemfire.launcher.registerSignalHandlers=true -Djava.awt.headless=true -Dsun.rmi.dgc.server.gcInterval=9223372036854775806
+Class-Path: /Applications/GemFire-Developer-8.0.a.RELEASE/Pivotal_GemFire_800_b48319_Linux/lib/locator-dependencies.jar
+[info 2015/07/16 13:21:02.619 PDT locator2 <WAN Locator Discovery Thread> tid=0x44] Locator discovery task exchanged locator information Zachary-Hansen-MacBook-pro.local[41112] with localhost[41112].
+
+[info 2015/07/16 13:21:02.620 PDT locator2 <WAN Locator Discovery Thread> tid=0x43] Locator discovery task exchanged locator information Zachary-Hansen-MacBook-pro.local[41112] with localhost[41111].
+
+[info 2015/07/16 13:21:02.620 PDT locator2 <Pooled Message Processor 1> tid=0x38] Locked disk store cluster_config for exclusive access in directory: /Users/zhansen/Documents/GemFire-Developer-8.0.a.RELEASE/workspace/social-media-gemfire/locator2/ConfigDiskDir_locator2
+
+[info 2015/07/16 13:21:02.646 PDT locator2 <Pooled Message Processor 1> tid=0x38] Recovered disk store cluster_config with unique id da7d20fae2584842-a1c2bc2c488ee1aa
+
+[info 2015/07/16 13:21:02.651 PDT locator2 <Pooled Message Processor 1> tid=0x38] Recovering oplog#2 /Users/zhansen/Documents/GemFire-Developer-8.0.a.RELEASE/workspace/social-media-gemfire/locator2/ConfigDiskDir_locator2/BACKUPcluster_config_2.drf for disk store cluster_config.
+
+[info 2015/07/16 13:21:02.653 PDT locator2 <Pooled Message Processor 1> tid=0x38] Recovering oplog#2 /Users/zhansen/Documents/GemFire-Developer-8.0.a.RELEASE/workspace/social-media-gemfire/locator2/ConfigDiskDir_locator2/BACKUPcluster_config_2.crf for disk store cluster_config.
+
+[info 2015/07/16 13:21:02.654 PDT locator2 <Pooled Message Processor 1> tid=0x38] recovery oplog load took 2 ms
+
+[info 2015/07/16 13:21:02.655 PDT locator2 <Oplog Delete Task> tid=0x47] Deleted oplog#2 crf for disk store cluster_config.
+
+[info 2015/07/16 13:21:02.655 PDT locator2 <Oplog Delete Task> tid=0x47] Deleted oplog#2 drf for disk store cluster_config.
+
+[info 2015/07/16 13:21:02.655 PDT locator2 <Pooled Message Processor 1> tid=0x38] Created oplog#3 drf for disk store cluster_config.
+
+[info 2015/07/16 13:21:02.660 PDT locator2 <Pooled Message Processor 1> tid=0x38] Created oplog#3 crf for disk store cluster_config.
+
+[info 2015/07/16 13:21:02.670 PDT locator2 <Pooled Message Processor 1> tid=0x38] recovery region initialization took 16 ms
+
+[info 2015/07/16 13:21:02.675 PDT locator2 <Pooled Message Processor 1> tid=0x38] Initializing region _ConfigurationRegion
+
+[info 2015/07/16 13:21:02.685 PDT locator2 <Pooled Message Processor 1> tid=0x38] Region /_ConfigurationRegion recovered with EndGII flag, rvv is RegionVersionVector[da7d20fae2584842-a1c2bc2c488ee1aa={rv0 gc0 localVersion=0 local exceptions=[]} others={cfc4029ea99e4375-8638b4a48273dbda={rv0 bsv0 bs=[0]}, gc={}]. recovered rvv is RegionVersionVector[da7d20fae2584842-a1c2bc2c488ee1aa={rv0 gc0 localVersion=0 local exceptions=[]} others={cfc4029ea99e4375-8638b4a48273dbda={rv0 bsv0 bs=[0]}, gc={}]. Do delta GII
+
+[info 2015/07/16 13:21:02.685 PDT locator2 <Pooled Message Processor 1> tid=0x38] Region _ConfigurationRegion requesting initial image from Zachary-Hansen-MacBook-pro(locator1:53911:locator)<v0>:64876
+
+[info 2015/07/16 13:21:02.686 PDT locator2 <Pooled Message Processor 1> tid=0x38] _ConfigurationRegion is done getting image from Zachary-Hansen-MacBook-pro(locator1:53911:locator)<v0>:64876. isDeltaGII is true
+
+[info 2015/07/16 13:21:02.687 PDT locator2 <Pooled Message Processor 1> tid=0x38] Region _ConfigurationRegion initialized persistent id: /192.168.1.134:/Users/zhansen/Documents/GemFire-Developer-8.0.a.RELEASE/workspace/social-media-gemfire/locator2/ConfigDiskDir_locator2 created at timestamp 1437078062674 version 0 diskStoreId da7d20fae2584842-a1c2bc2c488ee1aa name locator2 with data from Zachary-Hansen-MacBook-pro(locator1:53911:locator)<v0>:64876.
+
+[info 2015/07/16 13:21:02.687 PDT locator2 <Pooled Message Processor 1> tid=0x38] Initialization of region _ConfigurationRegion completed
+
+[info 2015/07/16 13:21:02.694 PDT locator2 <Pooled Message Processor 1> tid=0x38] Completed writing the shared configuration to 'cluster_config' directory
+
+[info 2015/07/16 13:21:02.695 PDT locator2 <Pooled Message Processor 1> tid=0x38] Getting Jar files from other locators
+
+[info 2015/07/16 13:21:02.707 PDT locator2 <Pooled Message Processor 1> tid=0x38] No deployed jars found on other locators.
+
+[info 2015/07/16 13:21:02.709 PDT locator2 <Pooled Message Processor 1> tid=0x38] ConfigRequestHandler installed
+
+[info 2015/07/16 13:21:02.709 PDT locator2 <Pooled Message Processor 1> tid=0x38] Cluster configuration service start up completed successfully and is now running ....
+
+[info 2015/07/16 13:21:04.172 PDT locator2 <UDP ucast receiver> tid=0x28] Membership: received new view  [Zachary-Hansen-MacBook-pro(locator1:53911:locator)<v0>:64876|2] [Zachary-Hansen-MacBook-pro(locator1:53911:locator)<v0>:64876/49996, Zachary-Hansen-MacBook-pro(locator2:53923:locator)<v1>:24775/10801, Zachary-Hansen-MacBook-pro(server1:53924)<v2>:36655/58588]
+
+[info 2015/07/16 13:21:04.172 PDT locator2 <UDP ucast receiver> tid=0x28] Membership: lead member is now Zachary-Hansen-MacBook-pro(server1:53924)<v2>:36655
+
+[info 2015/07/16 13:21:04.173 PDT locator2 <FD_SOCK Ping thread> tid=0x2e] GemFire failure detection is now monitoring Zachary-Hansen-MacBook-pro(server1:53924)<v2>:36655
+
+[info 2015/07/16 13:21:04.175 PDT locator2 <View Message Processor> tid=0x4e] Admitting member <Zachary-Hansen-MacBook-pro(server1:53924)<v2>:36655>. Now there are 3 non-admin member(s).
+
+[info 2015/07/16 13:21:04.176 PDT locator2 <DM-MemberEventInvoker> tid=0x20] ManagementMembershipListener member joined .. Zachary-Hansen-MacBook-pro(server1:53924)<v2>:36655
+
+[info 2015/07/16 13:21:04.200 PDT locator2 <Pooled High Priority Message Processor 1> tid=0x34] Member Zachary-Hansen-MacBook-pro(server1:53924)<v2>:36655 is equivalent or in the same redundancy zone.
+
+[info 2015/07/16 13:21:05.043 PDT locator2 <locator request thread[1]> tid=0x2d] Receieved request for configuration  : ConfigurationRequest for groups : 
+   cluster[cluster]
+
+[info 2015/07/16 13:21:05.045 PDT locator2 <locator request thread[1]> tid=0x2d] Building up configuration response with following configurations
+
+[info 2015/07/16 13:21:06.524 PDT locator2 <UDP ucast receiver> tid=0x28] Membership: received new view  [Zachary-Hansen-MacBook-pro(locator1:53911:locator)<v0>:64876|3] [Zachary-Hansen-MacBook-pro(locator1:53911:locator)<v0>:64876/49996, Zachary-Hansen-MacBook-pro(locator2:53923:locator)<v1>:24775/10801, Zachary-Hansen-MacBook-pro(server1:53924)<v2>:36655/58588, Zachary-Hansen-MacBook-pro(server2:53925)<v3>:16470/49908]
+
+[info 2015/07/16 13:21:06.525 PDT locator2 <View Message Processor> tid=0x4e] Admitting member <Zachary-Hansen-MacBook-pro(server2:53925)<v3>:16470>. Now there are 4 non-admin member(s).
+
+[info 2015/07/16 13:21:06.525 PDT locator2 <DM-MemberEventInvoker> tid=0x20] ManagementMembershipListener member joined .. Zachary-Hansen-MacBook-pro(server2:53925)<v3>:16470
+
+[info 2015/07/16 13:21:06.554 PDT locator2 <Pooled High Priority Message Processor 1> tid=0x34] Member Zachary-Hansen-MacBook-pro(server2:53925)<v3>:16470 is equivalent or in the same redundancy zone.
+
+[info 2015/07/16 13:21:07.415 PDT locator2 <locator request thread[1]> tid=0x2d] Receieved request for configuration  : ConfigurationRequest for groups : 
+   cluster[cluster]
+
+[info 2015/07/16 13:21:07.417 PDT locator2 <locator request thread[1]> tid=0x2d] Building up configuration response with following configurations
+
+[info 2015/07/16 13:21:08.901 PDT locator2 <UDP ucast receiver> tid=0x28] Membership: received new view  [Zachary-Hansen-MacBook-pro(locator1:53911:locator)<v0>:64876|4] [Zachary-Hansen-MacBook-pro(locator1:53911:locator)<v0>:64876/49996, Zachary-Hansen-MacBook-pro(locator2:53923:locator)<v1>:24775/10801, Zachary-Hansen-MacBook-pro(server1:53924)<v2>:36655/58588, Zachary-Hansen-MacBook-pro(server2:53925)<v3>:16470/49908, Zachary-Hansen-MacBook-pro(server3:53927)<v4>:17565/1791]
+
+[info 2015/07/16 13:21:08.903 PDT locator2 <View Message Processor> tid=0x4e] Admitting member <Zachary-Hansen-MacBook-pro(server3:53927)<v4>:17565>. Now there are 5 non-admin member(s).
+
+[info 2015/07/16 13:21:08.903 PDT locator2 <DM-MemberEventInvoker> tid=0x20] ManagementMembershipListener member joined .. Zachary-Hansen-MacBook-pro(server3:53927)<v4>:17565
+
+[info 2015/07/16 13:21:08.931 PDT locator2 <Pooled High Priority Message Processor 1> tid=0x34] Member Zachary-Hansen-MacBook-pro(server3:53927)<v4>:17565 is equivalent or in the same redundancy zone.
+
+[info 2015/07/16 13:21:09.787 PDT locator2 <locator request thread[1]> tid=0x2d] Receieved request for configuration  : ConfigurationRequest for groups : 
+   cluster[cluster]
+
+[info 2015/07/16 13:21:09.788 PDT locator2 <locator request thread[1]> tid=0x2d] Building up configuration response with following configurations
+
+[info 2015/07/16 13:27:57.565 PDT locator2 <Function Execution Processor1> tid=0x4c] Received GFSH shutdown. Shuting down member Zachary-Hansen-MacBook-pro(locator2:53923:locator)<v1>:24775 after 0 millis ...
+
+[info 2015/07/16 13:27:57.581 PDT locator2 <Function Execution Processor1> tid=0x4c] GemFireCache[id = 2122049087; isClosing = true; isShutDownAll = false; closingGatewayHubsByShutdownAll = false; created = Thu Jul 16 13:21:01 PDT 2015; server = false; copyOnRead = false; lockLease = 120; lockTimeout = 60]: Now closing.
+
+[info 2015/07/16 13:27:57.598 PDT locator2 <Function Execution Processor1> tid=0x4c] Resetting original MemoryPoolMXBean heap threshold bytes 0 on pool CMS Old Gen
+
+[info 2015/07/16 13:27:57.624 PDT locator2 <Function Execution Processor1> tid=0x4c] closing DiskStore[cluster_config]
+
+[info 2015/07/16 13:27:57.626 PDT locator2 <Function Execution Processor1> tid=0x4c] Unlocked disk store cluster_config
+
+[info 2015/07/16 13:27:57.628 PDT locator2 <Pooled High Priority Message Processor 4> tid=0xae] Member at Zachary-Hansen-MacBook-pro(server3:53927)<v4>:17565 gracefully left the distributed cache: shutdown message received
+
+[info 2015/07/16 13:27:57.632 PDT locator2 <com.gemstone.gemfire.distributed.internal.InternalLocator$2@1ba9117e> tid=0xaf] Stopping Distribution Locator on Zachary-Hansen-MacBook-pro.local[41112]
+
+[info 2015/07/16 13:27:57.634 PDT locator2 <Distribution Locator on Zachary-Hansen-MacBook-pro.local[41112]> tid=0x13] Closing locator's cache
+
+[info 2015/07/16 13:27:57.635 PDT locator2 <com.gemstone.gemfire.distributed.internal.InternalLocator$2@1ba9117e> tid=0xaf] Distribution Locator on Zachary-Hansen-MacBook-pro.local[41112]  is stopped
+
+[info 2015/07/16 13:27:57.637 PDT locator2 <Function Execution Processor1> tid=0x4c] Shutting down DistributionManager Zachary-Hansen-MacBook-pro(locator2:53923:locator)<v1>:24775. 
+
+[info 2015/07/16 13:27:57.639 PDT locator2 <Pooled High Priority Message Processor 4> tid=0xae] Member at Zachary-Hansen-MacBook-pro(server1:53924)<v2>:36655 gracefully left the distributed cache: shutdown message received
+
+[info 2015/07/16 13:27:57.641 PDT locator2 <Pooled High Priority Message Processor 4> tid=0xae] Member at Zachary-Hansen-MacBook-pro(server2:53925)<v3>:16470 gracefully left the distributed cache: shutdown message received

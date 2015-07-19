@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!DOCTYPE cache PUBLIC
+    "-//GemStone Systems, Inc.//GemFire Declarative Caching 7.0//EN"
+    "http://www.gemstone.com/dtd/cache7_0.dtd">
+
+<!--
+  | cache.xml
+  |
+-->
+<cache>
+       <pdx read-serialized="true">
+		<pdx-serializer>
+			<class-name>com.gemstone.gemfire.pdx.ReflectionBasedAutoSerializer</class-name>
+		</pdx-serializer>
+	   </pdx>
+       
+        <region name="User">
+		 <region-attributes refid="PARTITION_REDUNDANT">
+			<partition-attributes total-num-buckets="10" />
+		 </region-attributes>
+    	</region>
+          
+        <region name="Post">
+		 <region-attributes refid="PARTITION_REDUNDANT">
+			<partition-attributes total-num-buckets="10" />
+		 </region-attributes>
+    	</region>
+	
+	<function-service>
+		<function>
+			<class-name>io.pivotal.socialmedia.buslogic.AllPostsFromUser</class-name>
+		</function>
+	</function-service>    	    	
+        	
+</cache>

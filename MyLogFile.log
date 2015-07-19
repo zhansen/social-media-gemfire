@@ -1,0 +1,52 @@
+Jul 16, 2015 12:29:35 PM io.pivotal.socialmedia.buslogic.LoggingCacheListener afterCreate
+INFO: 25, Post [postNumber=25, post=Hello this is a test, userId=2222]
+Jul 16, 2015 1:21:41 PM io.pivotal.socialmedia.buslogic.LoggingCacheListener afterCreate
+INFO: 10001, Post [postNumber=10001, post=Hello, userId=2222]
+Jul 16, 2015 1:21:41 PM io.pivotal.socialmedia.buslogic.LoggingCacheListener afterCreate
+INFO: 10002, Post [postNumber=10002, post=Goodbye, userId=2222]
+Jul 16, 2015 1:21:41 PM io.pivotal.socialmedia.buslogic.LoggingCacheListener afterCreate
+INFO: 10003, Post [postNumber=10003, post=How are you?, userId=2222]
+Jul 16, 2015 1:21:41 PM io.pivotal.socialmedia.buslogic.LoggingCacheListener afterCreate
+INFO: 10004, Post [postNumber=10004, post=Whats up?, userId=2222]
+Jul 16, 2015 1:21:41 PM io.pivotal.socialmedia.buslogic.LoggingCacheListener afterCreate
+INFO: 10005, Post [postNumber=10005, post=Have a good day, userId=2222]
+Jul 16, 2015 1:21:41 PM io.pivotal.socialmedia.buslogic.LoggingCacheListener afterCreate
+INFO: 10006, Post [postNumber=10006, post=Hello, userId=33333]
+Jul 16, 2015 1:21:41 PM io.pivotal.socialmedia.buslogic.LoggingCacheListener afterCreate
+INFO: 10007, Post [postNumber=10007, post=Goodbye, userId=33333]
+Jul 16, 2015 1:21:41 PM io.pivotal.socialmedia.buslogic.LoggingCacheListener afterCreate
+INFO: 10008, Post [postNumber=10008, post=How are you?, userId=33333]
+Jul 16, 2015 1:21:41 PM io.pivotal.socialmedia.buslogic.LoggingCacheListener afterCreate
+INFO: 10009, Post [postNumber=10009, post=Whats up?, userId=33333]
+Jul 16, 2015 1:21:41 PM io.pivotal.socialmedia.buslogic.LoggingCacheListener afterCreate
+INFO: 10010, Post [postNumber=10010, post=Have a good day, userId=33333]
+Jul 16, 2015 1:21:41 PM io.pivotal.socialmedia.buslogic.LoggingCacheListener afterCreate
+INFO: 10011, Post [postNumber=10011, post=Hello, userId=44444]
+Jul 16, 2015 1:21:41 PM io.pivotal.socialmedia.buslogic.LoggingCacheListener afterCreate
+INFO: 10012, Post [postNumber=10012, post=Goodbye, userId=44444]
+Jul 16, 2015 1:21:41 PM io.pivotal.socialmedia.buslogic.LoggingCacheListener afterCreate
+INFO: 10013, Post [postNumber=10013, post=How are you?, userId=44444]
+Jul 16, 2015 1:21:41 PM io.pivotal.socialmedia.buslogic.LoggingCacheListener afterCreate
+INFO: 10014, Post [postNumber=10014, post=Whats up?, userId=44444]
+Jul 16, 2015 1:21:42 PM io.pivotal.socialmedia.buslogic.LoggingCacheListener afterCreate
+INFO: 10015, Post [postNumber=10015, post=Have a good day, userId=44444]
+Jul 16, 2015 1:21:42 PM io.pivotal.socialmedia.buslogic.LoggingCacheListener afterCreate
+INFO: 10016, Post [postNumber=10016, post=Hello, userId=55555]
+Jul 16, 2015 1:21:42 PM io.pivotal.socialmedia.buslogic.LoggingCacheListener afterCreate
+INFO: 10017, Post [postNumber=10017, post=Goodbye, userId=55555]
+Jul 16, 2015 1:21:42 PM io.pivotal.socialmedia.buslogic.LoggingCacheListener afterCreate
+INFO: 10018, Post [postNumber=10018, post=How are you?, userId=55555]
+Jul 16, 2015 1:21:42 PM io.pivotal.socialmedia.buslogic.LoggingCacheListener afterCreate
+INFO: 10019, Post [postNumber=10019, post=Whats up?, userId=55555]
+Jul 16, 2015 1:21:42 PM io.pivotal.socialmedia.buslogic.LoggingCacheListener afterCreate
+INFO: 10020, Post [postNumber=10020, post=Have a good day, userId=55555]
+Jul 16, 2015 1:21:42 PM io.pivotal.socialmedia.buslogic.LoggingCacheListener afterCreate
+INFO: 10021, Post [postNumber=10021, post=Hello, userId=11111]
+Jul 16, 2015 1:21:42 PM io.pivotal.socialmedia.buslogic.LoggingCacheListener afterCreate
+INFO: 10022, Post [postNumber=10022, post=Goodbye, userId=11111]
+Jul 16, 2015 1:21:42 PM io.pivotal.socialmedia.buslogic.LoggingCacheListener afterCreate
+INFO: 10023, Post [postNumber=10023, post=How are you?, userId=11111]
+Jul 16, 2015 1:21:42 PM io.pivotal.socialmedia.buslogic.LoggingCacheListener afterCreate
+INFO: 10024, Post [postNumber=10024, post=Whats up?, userId=11111]
+Jul 16, 2015 1:21:42 PM io.pivotal.socialmedia.buslogic.LoggingCacheListener afterCreate
+INFO: 10025, Post [postNumber=10025, post=Have a good day, userId=11111]
