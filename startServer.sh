@@ -32,3 +32,5 @@ CLASSPATH=$CLASSPATH:"$REPO"/org/slf4j/slf4j-log4j12/1.7.5/slf4j-log4j12-1.7.5.j
 CLASSPATH=$CLASSPATH:"$REPO"/com/gopivotal/training/server-config/1.0.0.CI-SNAPSHOT/server-config-1.0.0.CI-SNAPSHOT.jar
 export CLASSPATH
 
+java io.pivotal.socialmedia.buslogic.UserLoader
+java io.pivotal.socialmedia.buslogic.PostLoader

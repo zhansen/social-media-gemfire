@@ -16,13 +16,13 @@
        
         <region name="User">
 		 <region-attributes refid="PARTITION_REDUNDANT">
-			<partition-attributes total-num-buckets="10" />
+			<partition-attributes redundant-copies="3" total-num-buckets="11" />
 		 </region-attributes>
     	</region>
           
         <region name="Post">
 		 <region-attributes refid="PARTITION_REDUNDANT">
-			<partition-attributes total-num-buckets="10" />
+			<partition-attributes redundant-copies="3" total-num-buckets="11" />
 		 </region-attributes>
     	</region>
 	

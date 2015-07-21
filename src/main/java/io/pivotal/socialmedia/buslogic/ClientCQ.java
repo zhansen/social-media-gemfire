@@ -55,7 +55,7 @@ public class ClientCQ {
 		cqAf.addCqListener(new PostingCQListener());
 		CqAttributes cqa = cqAf.create();
 		
-		String query = "SELECT * FROM /Post p WHERE p.postNumber > 10000";
+		String query = "SELECT * FROM /Post p WHERE p.postNumber > 20000";
 		
 		
 		CqQuery myCq = queryService.newCq("myCQ", query, cqa);

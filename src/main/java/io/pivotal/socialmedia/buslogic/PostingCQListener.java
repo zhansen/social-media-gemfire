@@ -24,7 +24,7 @@ public class PostingCQListener implements CqListener
 		System.out.println("***************************************************************************************************************************");
 		System.out.println("* CQListener: Event is           : " + event);
 		System.out.println("* CQListener: Key is             : " + (Integer)event.getKey());
-		System.out.println("* CQListener: Order is           : " +  (Post)event.getNewValue());
+		System.out.println("* CQListener: New Post is        : " +  (Post)event.getNewValue());
 		System.out.println("* CQListener: Base Operation is  : " + event.getBaseOperation());
 		System.out.println("* CQListener: Query Operation is : " + event.getQueryOperation());
 		System.out.println("* CQListener: Cq is              : " + event.getCq());

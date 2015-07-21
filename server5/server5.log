@@ -1,0 +1,782 @@
+
+[info 2015/07/20 17:02:06.680 PDT server5 <main> tid=0x1] Renamed old log file to "server5-02-01.log".
+
+[info 2015/07/20 17:02:06.688 PDT server5 <main> tid=0x1] Startup Configuration:
+   ### GemFire Properties defined with system property ###
+  use-cluster-configuration=true
+  ### GemFire Properties defined with api ###
+  name=server5
+  ### GemFire Properties defined with file:/Users/zhansen/Documents/GemFire-Developer-8.0.a.RELEASE/workspace/bootcamp_cluster/gemfire.properties ###
+  cache-xml-file=../xml/server-cache.xml
+  enable-network-partition-detection=true
+  locators=gemhost1[41111],gemhost2[41112]
+  log-level=config
+  mcast-port=0
+  redundancy-zone=az3
+  ### GemFire Properties defined with launcher ###
+  log-file=server5.log
+  ### GemFire Properties using default values ###
+  ack-severe-alert-threshold=0
+  ack-wait-threshold=15
+  archive-disk-space-limit=0
+  archive-file-size-limit=0
+  async-distribution-timeout=0
+  async-max-queue-size=8
+  async-queue-timeout=60000
+  bind-address=
+  cluster-configuration-dir=/Users/zhansen/Documents/GemFire-Developer-8.0.a.RELEASE/workspace/bootcamp_cluster/server5
+  cluster-ssl-ciphers=any
+  cluster-ssl-enabled=false
+  cluster-ssl-keystore=
+  cluster-ssl-keystore-password=
+  cluster-ssl-keystore-type=
+  cluster-ssl-protocols=any
+  cluster-ssl-require-authentication=true
+  cluster-ssl-truststore=
+  cluster-ssl-truststore-password=
+  conflate-events=server
+  conserve-sockets=true
+  delta-propagation=true
+  deploy-working-dir=.
+  disable-auto-reconnect=false
+  disable-tcp=false
+  distributed-system-id=-1
+  durable-client-id=
+  durable-client-timeout=300
+  enable-cluster-configuration=true
+  enable-time-statistics=false
+  enforce-unique-host=false
+  gateway-ssl-ciphers=any
+  gateway-ssl-enabled=false
+  gateway-ssl-keystore=
+  gateway-ssl-keystore-password=
+  gateway-ssl-keystore-type=
+  gateway-ssl-protocols=any
+  gateway-ssl-require-authentication=true
+  gateway-ssl-truststore=
+  gateway-ssl-truststore-password=
+  groups=
+  http-service-bind-address=
+  http-service-port=7070
+  http-service-ssl-ciphers=any
+  http-service-ssl-enabled=false
+  http-service-ssl-keystore=
+  http-service-ssl-keystore-password=
+  http-service-ssl-keystore-type=
+  http-service-ssl-protocols=any
+  http-service-ssl-require-authentication=false
+  http-service-ssl-truststore=
+  http-service-ssl-truststore-password=
+  jmx-manager=false
+  jmx-manager-access-file=
+  jmx-manager-bind-address=
+  jmx-manager-hostname-for-clients=
+  jmx-manager-http-port=7070
+  jmx-manager-password-file=
+  jmx-manager-port=1099
+  jmx-manager-ssl=false
+  jmx-manager-ssl-ciphers=any
+  jmx-manager-ssl-enabled=false
+  jmx-manager-ssl-keystore=
+  jmx-manager-ssl-keystore-password=
+  jmx-manager-ssl-keystore-type=
+  jmx-manager-ssl-protocols=any
+  jmx-manager-ssl-require-authentication=true
+  jmx-manager-ssl-truststore=
+  jmx-manager-ssl-truststore-password=
+  jmx-manager-start=false
+  jmx-manager-update-rate=2000
+  license-application-cache=
+  license-data-management=
+  license-server-timeout=10000
+  license-working-dir=
+  load-cluster-configuration-from-dir=false
+  locator-wait-time=0
+  log-disk-space-limit=0
+  log-file-size-limit=0
+  max-num-reconnect-tries=3
+  max-wait-time-reconnect=60000
+  mcast-address=239.192.81.1
+  mcast-flow-control=1048576, 0.25, 5000
+  mcast-recv-buffer-size=1048576
+  mcast-send-buffer-size=65535
+  mcast-ttl=32
+  member-timeout=5000
+  membership-port-range=1024-65535
+  memcached-bind-address=
+  memcached-port=0
+  memcached-protocol=ASCII
+  remote-locators=
+  remove-unresponsive-client=false
+  roles=
+  security-=
+  security-client-accessor=
+  security-client-accessor-pp=
+  security-client-auth-init=
+  security-client-authenticator=
+  security-client-dhalgo=
+  security-log-file=
+  security-log-level=config
+  security-peer-auth-init=
+  security-peer-authenticator=
+  security-peer-verifymember-timeout=1000
+  server-bind-address=
+  server-ssl-ciphers=any
+  server-ssl-enabled=false
+  server-ssl-keystore=
+  server-ssl-keystore-password=
+  server-ssl-keystore-type=
+  server-ssl-protocols=any
+  server-ssl-require-authentication=true
+  server-ssl-truststore=
+  server-ssl-truststore-password=
+  socket-buffer-size=32768
+  socket-lease-time=60000
+  ssl-ciphers=any
+  ssl-enabled=false
+  ssl-protocols=any
+  ssl-require-authentication=true
+  start-dev-rest-api=false
+  start-locator=
+  statistic-archive-file=
+  statistic-sample-rate=1000
+  statistic-sampling-enabled=true
+  tcp-port=0
+  udp-fragment-size=60000
+  udp-recv-buffer-size=1048576
+  udp-send-buffer-size=65535
+  user-command-packages=
+  writable-working-dir=
+  
+
+[info 2015/07/20 17:02:06.705 PDT server5 <main> tid=0x1] 
+  ---------------------------------------------------------------------------
+  
+    Copyright (C) 1997-2015 Pivotal Software, Inc. All rights reserved. This
+    product is protected by U.S. and international copyright and intellectual
+    property laws. Pivotal products are covered by one or more patents listed
+    at http://www.pivotal.io/patents.  Pivotal is a registered trademark
+    of trademark of Pivotal Software, Inc. in the United States and/or other
+    jurisdictions.  All other marks and names mentioned herein may be
+    trademarks of their respective companies.
+  
+  ---------------------------------------------------------------------------
+  Java version:   8.1.0 build 50625 01/16/2015 16:21:01 PST javac 1.7.0_72
+  Native version: native code unavailable
+  Source revision: 50625
+  Source repository: gemfire/branches/cedar_dev_Oct12
+  Running on: Zachary-Hansen-MacBook-pro.local/192.168.1.15, 8 cpu(s), x86_64 Mac OS X 10.9.5
+  Process ID: 1470
+  User: zhansen
+  Current dir: /Users/zhansen/Documents/GemFire-Developer-8.0.a.RELEASE/workspace/bootcamp_cluster/server5
+  Home dir: /Users/zhansen
+  Command Line Parameters:
+    -Dgemfire.default.locators=192.168.1.2[41111]
+    -DgemfirePropertyFile=/Users/zhansen/Documents/GemFire-Developer-8.0.a.RELEASE/workspace/bootcamp_cluster/gemfire.properties
+    -Dgemfire.use-cluster-configuration=true
+    -XX:OnOutOfMemoryError=kill -KILL %p
+    -Xms50m
+    -Xmx50m
+    -XX:+UseConcMarkSweepGC
+    -XX:CMSInitiatingOccupancyFraction=60
+    -Dgemfire.launcher.registerSignalHandlers=true
+    -Djava.awt.headless=true
+    -Dsun.rmi.dgc.server.gcInterval=9223372036854775806
+  Class Path:
+    /Users/zhansen/Downloads/boot_camp/lib/gemfire.jar
+    ../target/classes/
+    /usr/local/Cellar/gemfire/8.1.0/libexec/lib/server-dependencies.jar
+  Library Path:
+    /Users/zhansen/Library/Java/Extensions
+    /Library/Java/Extensions
+    /Network/Library/Java/Extensions
+    /System/Library/Java/Extensions
+    /usr/lib/java
+    .
+  System Properties:
+      awt.toolkit = sun.lwawt.macosx.LWCToolkit
+      file.encoding = UTF-8
+      file.encoding.pkg = sun.io
+      file.separator = /
+      ftp.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+      gemfire.default.locators = 192.168.1.2[41111]
+      gemfire.launcher.registerSignalHandlers = true
+      gemfire.use-cluster-configuration = true
+      gemfirePropertyFile = /Users/zhansen/Documents/GemFire-Developer-8.0.a.RELEASE/workspace/bootcamp_cluster/gemfire.properties
+      gopherProxySet = false
+      http.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+      java.awt.graphicsenv = sun.awt.CGraphicsEnvironment
+      java.awt.headless = true
+      java.awt.printerjob = sun.lwawt.macosx.CPrinterJob
+      java.class.version = 52.0
+      java.endorsed.dirs = /Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/endorsed
+      java.ext.dirs = /Users/zhansen/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java
+      java.home = /Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre
+      java.io.tmpdir = /var/folders/wh/29_3ztds0rdg7yx4nvrcfnhr0000gp/T/
+      java.runtime.name = Java(TM) SE Runtime Environment
+      java.runtime.version = 1.8.0_45-b14
+      java.specification.name = Java Platform API Specification
+      java.specification.vendor = Oracle Corporation
+      java.specification.version = 1.8
+      java.vendor = Oracle Corporation
+      java.vendor.url = http://java.oracle.com/
+      java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+      java.version = 1.8.0_45
+      java.vm.info = mixed mode
+      java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+      java.vm.specification.name = Java Virtual Machine Specification
+      java.vm.specification.vendor = Oracle Corporation
+      java.vm.specification.version = 1.8
+      java.vm.vendor = Oracle Corporation
+      java.vm.version = 25.45-b02
+      jna.platform.library.path = /usr/lib:/usr/lib
+      jnidispatch.path = /var/folders/wh/29_3ztds0rdg7yx4nvrcfnhr0000gp/T/jna--323296607/jna3967773621117904179.tmp
+      line.separator = 
+  
+      log4j.configurationFile = jar:file:/usr/local/Cellar/gemfire/8.1.0/libexec/lib/gemfire.jar!/com/gemstone/gemfire/internal/logging/log4j/log4j2-default.xml
+      os.version = 10.9.5
+      p2p.useSSL = false
+      path.separator = :
+      socksNonProxyHosts = local|*.local|169.254/16|*.169.254/16
+      sun.arch.data.model = 64
+      sun.boot.class.path = /Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/classes
+      sun.boot.library.path = /Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib
+      sun.cpu.endian = little
+      sun.cpu.isalist = 
+      sun.io.unicode.encoding = UnicodeBig
+      sun.java.command = com.gemstone.gemfire.distributed.ServerLauncher start server5 --redirect-output --server-port=0
+      sun.java.launcher = SUN_STANDARD
+      sun.jnu.encoding = UTF-8
+      sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+      sun.nio.ch.bugLevel = 
+      sun.os.patch.level = unknown
+      sun.rmi.dgc.server.gcInterval = 9223372036854775806
+      user.country = US
+      user.language = en
+      user.timezone = America/Los_Angeles
+  ---------------------------------------------------------------------------
+  
+
+[info 2015/07/20 17:02:06.707 PDT server5 <main> tid=0x1] Startup Configuration:
+   ### GemFire Properties defined with system property ###
+  use-cluster-configuration=true
+  ### GemFire Properties defined with api ###
+  name=server5
+  ### GemFire Properties defined with file:/Users/zhansen/Documents/GemFire-Developer-8.0.a.RELEASE/workspace/bootcamp_cluster/gemfire.properties ###
+  cache-xml-file=../xml/server-cache.xml
+  enable-network-partition-detection=true
+  locators=gemhost1[41111],gemhost2[41112]
+  log-level=config
+  mcast-port=0
+  redundancy-zone=az3
+  ### GemFire Properties defined with launcher ###
+  log-file=server5.log
+  ### GemFire Properties using default values ###
+  ack-severe-alert-threshold=0
+  ack-wait-threshold=15
+  archive-disk-space-limit=0
+  archive-file-size-limit=0
+  async-distribution-timeout=0
+  async-max-queue-size=8
+  async-queue-timeout=60000
+  bind-address=
+  cluster-configuration-dir=/Users/zhansen/Documents/GemFire-Developer-8.0.a.RELEASE/workspace/bootcamp_cluster/server5
+  cluster-ssl-ciphers=any
+  cluster-ssl-enabled=false
+  cluster-ssl-keystore=
+  cluster-ssl-keystore-password=
+  cluster-ssl-keystore-type=
+  cluster-ssl-protocols=any
+  cluster-ssl-require-authentication=true
+  cluster-ssl-truststore=
+  cluster-ssl-truststore-password=
+  conflate-events=server
+  conserve-sockets=true
+  delta-propagation=true
+  deploy-working-dir=.
+  disable-auto-reconnect=false
+  disable-tcp=false
+  distributed-system-id=-1
+  durable-client-id=
+  durable-client-timeout=300
+  enable-cluster-configuration=true
+  enable-time-statistics=false
+  enforce-unique-host=false
+  gateway-ssl-ciphers=any
+  gateway-ssl-enabled=false
+  gateway-ssl-keystore=
+  gateway-ssl-keystore-password=
+  gateway-ssl-keystore-type=
+  gateway-ssl-protocols=any
+  gateway-ssl-require-authentication=true
+  gateway-ssl-truststore=
+  gateway-ssl-truststore-password=
+  groups=
+  http-service-bind-address=
+  http-service-port=7070
+  http-service-ssl-ciphers=any
+  http-service-ssl-enabled=false
+  http-service-ssl-keystore=
+  http-service-ssl-keystore-password=
+  http-service-ssl-keystore-type=
+  http-service-ssl-protocols=any
+  http-service-ssl-require-authentication=false
+  http-service-ssl-truststore=
+  http-service-ssl-truststore-password=
+  jmx-manager=false
+  jmx-manager-access-file=
+  jmx-manager-bind-address=
+  jmx-manager-hostname-for-clients=
+  jmx-manager-http-port=7070
+  jmx-manager-password-file=
+  jmx-manager-port=1099
+  jmx-manager-ssl=false
+  jmx-manager-ssl-ciphers=any
+  jmx-manager-ssl-enabled=false
+  jmx-manager-ssl-keystore=
+  jmx-manager-ssl-keystore-password=
+  jmx-manager-ssl-keystore-type=
+  jmx-manager-ssl-protocols=any
+  jmx-manager-ssl-require-authentication=true
+  jmx-manager-ssl-truststore=
+  jmx-manager-ssl-truststore-password=
+  jmx-manager-start=false
+  jmx-manager-update-rate=2000
+  license-application-cache=
+  license-data-management=
+  license-server-timeout=10000
+  license-working-dir=
+  load-cluster-configuration-from-dir=false
+  locator-wait-time=0
+  log-disk-space-limit=0
+  log-file-size-limit=0
+  max-num-reconnect-tries=3
+  max-wait-time-reconnect=60000
+  mcast-address=239.192.81.1
+  mcast-flow-control=1048576, 0.25, 5000
+  mcast-recv-buffer-size=1048576
+  mcast-send-buffer-size=65535
+  mcast-ttl=32
+  member-timeout=5000
+  membership-port-range=1024-65535
+  memcached-bind-address=
+  memcached-port=0
+  memcached-protocol=ASCII
+  remote-locators=
+  remove-unresponsive-client=false
+  roles=
+  security-=
+  security-client-accessor=
+  security-client-accessor-pp=
+  security-client-auth-init=
+  security-client-authenticator=
+  security-client-dhalgo=
+  security-log-file=
+  security-log-level=config
+  security-peer-auth-init=
+  security-peer-authenticator=
+  security-peer-verifymember-timeout=1000
+  server-bind-address=
+  server-ssl-ciphers=any
+  server-ssl-enabled=false
+  server-ssl-keystore=
+  server-ssl-keystore-password=
+  server-ssl-keystore-type=
+  server-ssl-protocols=any
+  server-ssl-require-authentication=true
+  server-ssl-truststore=
+  server-ssl-truststore-password=
+  socket-buffer-size=32768
+  socket-lease-time=60000
+  ssl-ciphers=any
+  ssl-enabled=false
+  ssl-protocols=any
+  ssl-require-authentication=true
+  start-dev-rest-api=false
+  start-locator=
+  statistic-archive-file=
+  statistic-sample-rate=1000
+  statistic-sampling-enabled=true
+  tcp-port=0
+  udp-fragment-size=60000
+  udp-recv-buffer-size=1048576
+  udp-send-buffer-size=65535
+  user-command-packages=
+  writable-working-dir=
+  
+
+[info 2015/07/20 17:02:06.709 PDT server5 <main> tid=0x1] Defaulting license-working-dir to current working directory "/Users/zhansen/Documents/GemFire-Developer-8.0.a.RELEASE/workspace/bootcamp_cluster/server5".
+
+[info 2015/07/20 17:02:06.710 PDT server5 <main> tid=0x1] Licensing required 1 milliseconds.
+
+[info 2015/07/20 17:02:06.725 PDT server5 <main> tid=0x1] Serial Queue info : THROTTLE_PERCENT: 0.75 SERIAL_QUEUE_BYTE_LIMIT :41943040 SERIAL_QUEUE_THROTTLE :31457280 TOTAL_SERIAL_QUEUE_BYTE_LIMIT :83886080 TOTAL_SERIAL_QUEUE_THROTTLE :31457280 SERIAL_QUEUE_SIZE_LIMIT :20000 SERIAL_QUEUE_SIZE_THROTTLE :15000
+
+[info 2015/07/20 17:02:06.748 PDT server5 <main> tid=0x1] GemFire P2P Listener started on  tcp:///192.168.1.15:26820
+
+[info 2015/07/20 17:02:07.013 PDT server5 <PingSender> tid=0x22] locator 192.168.1.2(null)<v0>:41111 member address is 192.168.1.2(locator1:1764:locator)<ec><v0>:8040
+
+[info 2015/07/20 17:02:07.026 PDT server5 <PingSender> tid=0x22] unable to connect to locator  192.168.1.13(null)<v0>:41112
+
+[info 2015/07/20 17:02:07.027 PDT server5 <PingSender> tid=0x22] Locator has disabled floating membership coordination
+
+[info 2015/07/20 17:02:07.028 PDT server5 <main> tid=0x1] Attempting to join distributed system whose membership coordinator is 192.168.1.2(locator1:1764:locator)<ec><v0>:8040 using membership ID 192.168.1.15(server5:1470):37851
+
+[info 2015/07/20 17:02:07.200 PDT server5 <main> tid=0x1] Membership: lead member is now 192.168.1.15(server5:1470)<v6>:37851
+
+[info 2015/07/20 17:02:07.205 PDT server5 <FD_SOCK Ping thread> tid=0x24] GemFire failure detection is now monitoring 192.168.1.2(locator1:1764:locator)<ec><v0>:8040
+
+[info 2015/07/20 17:02:07.206 PDT server5 <main> tid=0x1] Connected to Jgroups channel (took  455  ms)
+
+[info 2015/07/20 17:02:07.206 PDT server5 <main> tid=0x1] Entered into membership with ID 192.168.1.15(server5:1470)<v6>:37851.
+
+[info 2015/07/20 17:02:07.207 PDT server5 <main> tid=0x1] Starting DistributionManager 192.168.1.15(server5:1470)<v6>:37851.  (took 471/ ms)
+
+[info 2015/07/20 17:02:07.207 PDT server5 <main> tid=0x1] Initial (membershipManager) view =  [192.168.1.2(locator1:1764:locator)<ec><v0>:8040, 192.168.1.15(server5:1470)<v6>:37851{lead}]
+
+[info 2015/07/20 17:02:07.208 PDT server5 <main> tid=0x1] Admitting member <192.168.1.2(locator1:1764:locator)<ec><v0>:8040>. Now there are 1 non-admin member(s).
+
+[info 2015/07/20 17:02:07.208 PDT server5 <main> tid=0x1] Admitting member <192.168.1.15(server5:1470)<v6>:37851>. Now there are 2 non-admin member(s).
+
+[info 2015/07/20 17:02:07.210 PDT server5 <main> tid=0x1] Membership: Finished view processing viewID =  6
+
+[info 2015/07/20 17:02:07.268 PDT server5 <P2P message reader for 192.168.1.2(locator1:1764:locator)<ec><v0>:8040 shared unordered uid=3 port=50228> tid=0x27] Member 192.168.1.2(locator1:1764:locator)<ec><v0>:8040 is not equivalent or in the same redundancy zone.
+
+[info 2015/07/20 17:02:07.269 PDT server5 <main> tid=0x1] DistributionManager 192.168.1.15(server5:1470)<v6>:37851 started on gemhost1[41111],gemhost2[41112]. There were 1 other DMs. others: [192.168.1.2(locator1:1764:locator)<ec><v0>:8040]  (VERBOSE, took 553 ms) 
+
+[info 2015/07/20 17:02:07.277 PDT server5 <Thread-4 StatSampler> tid=0x2c] Disabling statistic archival.
+
+[info 2015/07/20 17:02:07.389 PDT server5 <main> tid=0x1] Initializing region _monitoringRegion_192.168.1.15<v6>37851
+
+[info 2015/07/20 17:02:07.409 PDT server5 <main> tid=0x1] Region _monitoringRegion_192.168.1.15<v6>37851 requesting initial image from 192.168.1.2(locator1:1764:locator)<ec><v0>:8040
+
+[info 2015/07/20 17:02:07.415 PDT server5 <main> tid=0x1] _monitoringRegion_192.168.1.15<v6>37851 is done getting image from 192.168.1.2(locator1:1764:locator)<ec><v0>:8040. isDeltaGII is false
+
+[info 2015/07/20 17:02:07.416 PDT server5 <main> tid=0x1] Initialization of region _monitoringRegion_192.168.1.15<v6>37851 completed
+
+[info 2015/07/20 17:02:08.055 PDT server5 <main> tid=0x1] Received cluster configuration from the locator
+
+[info 2015/07/20 17:02:08.055 PDT server5 <main> tid=0x1] Received an empty shared configuration
+
+[info 2015/07/20 17:02:08.166 PDT server5 <main> tid=0x1] Initializing region PdxTypes
+
+[info 2015/07/20 17:02:08.188 PDT server5 <main> tid=0x1] Initialization of region PdxTypes completed
+
+[info 2015/07/20 17:02:08.215 PDT server5 <main> tid=0x1] Initializing region __PR
+
+[info 2015/07/20 17:02:08.220 PDT server5 <main> tid=0x1] Initialization of region __PR completed
+
+[info 2015/07/20 17:02:08.253 PDT server5 <main> tid=0x1] Partitioned Region /User is born with prId=1 ident:#User
+
+[info 2015/07/20 17:02:08.302 PDT server5 <main> tid=0x1] Partitioned Region /Post is born with prId=2 ident:#Post
+
+[info 2015/07/20 17:02:08.338 PDT server5 <main> tid=0x1] Bridge server connection listener bound to address 0.0.0.0/0.0.0.0:49797 with backlog 1,000.
+
+[info 2015/07/20 17:02:43.422 PDT server5 <main> tid=0x1] ClientHealthMonitorThread maximum allowed time between pings: 60,000
+
+[info 2015/07/20 17:02:43.435 PDT server5 <main> tid=0x1] CacheServer Configuration:   port=49797 max-connections=800 max-threads=0 notify-by-subscription=true socket-buffer-size=32768 maximum-time-between-pings=60000 maximum-message-count=230000 message-time-to-live=180 eviction-policy=none capacity=1 overflow directory=. groups=[] loadProbe=ConnectionCountProbe loadPollInterval=5000 tcpNoDelay=true
+
+[info 2015/07/20 17:02:43.448 PDT server5 <main> tid=0x1] Cache initialized using "file:/Users/zhansen/Documents/GemFire-Developer-8.0.a.RELEASE/workspace/bootcamp_cluster/server5/../xml/server-cache.xml":
+  <?xml version="1.0"?>
+  <!DOCTYPE cache PUBLIC
+      "-//GemStone Systems, Inc.//GemFire Declarative Caching 7.0//EN"
+      "http://www.gemstone.com/dtd/cache7_0.dtd">
+  <!--
+    | cache.xml
+    |
+  -->
+  <cache>
+         <pdx read-serialized="true">
+  		<pdx-serializer>
+  			<class-name>com.gemstone.gemfire.pdx.ReflectionBasedAutoSerializer</class-name>
+  		</pdx-serializer>
+  	   </pdx>
+         
+          <region name="User">
+  		 <region-attributes refid="PARTITION_REDUNDANT">
+  			<partition-attributes redundant-copies="3" total-num-buckets="11" />
+  		 </region-attributes>
+      	</region>
+            
+          <region name="Post">
+  		 <region-attributes refid="PARTITION_REDUNDANT">
+  			<partition-attributes redundant-copies="3" total-num-buckets="11" />
+  		 </region-attributes>
+      	</region>
+  	
+  	<function-service>
+  		<function>
+  			<class-name>io.pivotal.socialmedia.buslogic.AllPostsFromUser</class-name>
+  		</function>
+  	</function-service>    	    	
+          	
+  </cache>
+
+[info 2015/07/20 17:03:11.820 PDT server5 <UDP ucast receiver> tid=0x1e] Membership: received new view  [192.168.1.2(locator1:1764:locator)<ec><v0>:8040|7] [192.168.1.2(locator1:1764:locator)<ec><v0>:8040/34353, 192.168.1.15(server5:1470)<v6>:37851/26820, 192.168.1.15(server6:1520)<v7>:21803/12047]
+
+[info 2015/07/20 17:03:11.825 PDT server5 <View Message Processor> tid=0x46] Membership: Processing addition < 192.168.1.15(server6:1520)<v7>:21803 >
+
+[info 2015/07/20 17:03:11.825 PDT server5 <View Message Processor> tid=0x46] Admitting member <192.168.1.15(server6:1520)<v7>:21803>. Now there are 3 non-admin member(s).
+
+[info 2015/07/20 17:03:11.826 PDT server5 <View Message Processor> tid=0x46] Membership: Finished view processing viewID =  7
+
+[info 2015/07/20 17:03:11.831 PDT server5 <FD_SOCK Ping thread> tid=0x24] GemFire failure detection is now monitoring 192.168.1.15(server6:1520)<v7>:21803
+
+[info 2015/07/20 17:03:11.852 PDT server5 <Pooled High Priority Message Processor 1> tid=0x2a] Member 192.168.1.15(server6:1520)<v7>:21803 is equivalent or in the same redundancy zone.
+
+[warning 2015/07/20 17:04:52.914 PDT server5 <UDP ucast receiver> tid=0x1e] New cache time offset calculated is off more than 890 ms from earlier offset.
+
+[warning 2015/07/20 17:05:05.427 PDT server5 <Function Execution Processor1> tid=0x3b] Configured Redundancy Level Could Not be Satisfied. Advise you to start enough data store nodes to satisfy redundancy for the region. Partitioned Region name = /User Redundancy level set to 3 . Number of available data stores: 2 . Number successfully allocated = 1 . Data stores: [192.168.1.15(server6:1520)<v7>:21803, 192.168.1.15(server5:1470)<v6>:37851] . Data stores successfully allocated: [192.168.1.15(server6:1520)<v7>:21803] . Equivalent members: [192.168.1.15(server5:1470)<v6>:37851, 192.168.1.15(server6:1520)<v7>:21803] 
+
+[info 2015/07/20 17:05:05.438 PDT server5 <Function Execution Processor1> tid=0x3b] Initializing region _B__User_1
+
+[info 2015/07/20 17:05:05.440 PDT server5 <Function Execution Processor1> tid=0x3b] Initialization of region _B__User_1 completed
+
+[warning 2015/07/20 17:05:05.442 PDT server5 <Function Execution Processor1> tid=0x3b] Configured Redundancy Level Could Not be Satisfied. Advise you to start enough data store nodes to satisfy redundancy for the region. Partitioned Region name = /User Redundancy level set to 3 . Number of available data stores: 2 . Number successfully allocated = 1 . Data stores: [192.168.1.15(server6:1520)<v7>:21803, 192.168.1.15(server5:1470)<v6>:37851] . Data stores successfully allocated: [192.168.1.15(server5:1470)<v6>:37851] . Equivalent members: [192.168.1.15(server5:1470)<v6>:37851, 192.168.1.15(server6:1520)<v7>:21803] 
+
+[warning 2015/07/20 17:05:05.450 PDT server5 <Function Execution Processor1> tid=0x3b] Configured Redundancy Level Could Not be Satisfied. Advise you to start enough data store nodes to satisfy redundancy for the region. Partitioned Region name = /User Redundancy level set to 3 . Number of available data stores: 2 . Number successfully allocated = 1 . Data stores: [192.168.1.15(server6:1520)<v7>:21803, 192.168.1.15(server5:1470)<v6>:37851] . Data stores successfully allocated: [192.168.1.15(server6:1520)<v7>:21803] . Equivalent members: [192.168.1.15(server5:1470)<v6>:37851, 192.168.1.15(server6:1520)<v7>:21803] 
+
+[info 2015/07/20 17:05:05.452 PDT server5 <Function Execution Processor1> tid=0x3b] Initializing region _B__User_3
+
+[info 2015/07/20 17:05:05.453 PDT server5 <Function Execution Processor1> tid=0x3b] Initialization of region _B__User_3 completed
+
+[warning 2015/07/20 17:05:05.454 PDT server5 <Function Execution Processor1> tid=0x3b] Configured Redundancy Level Could Not be Satisfied. Advise you to start enough data store nodes to satisfy redundancy for the region. Partitioned Region name = /User Redundancy level set to 3 . Number of available data stores: 2 . Number successfully allocated = 1 . Data stores: [192.168.1.15(server6:1520)<v7>:21803, 192.168.1.15(server5:1470)<v6>:37851] . Data stores successfully allocated: [192.168.1.15(server5:1470)<v6>:37851] . Equivalent members: [192.168.1.15(server5:1470)<v6>:37851, 192.168.1.15(server6:1520)<v7>:21803] 
+
+[warning 2015/07/20 17:05:05.458 PDT server5 <Function Execution Processor1> tid=0x3b] Configured Redundancy Level Could Not be Satisfied. Advise you to start enough data store nodes to satisfy redundancy for the region. Partitioned Region name = /User Redundancy level set to 3 . Number of available data stores: 2 . Number successfully allocated = 1 . Data stores: [192.168.1.15(server6:1520)<v7>:21803, 192.168.1.15(server5:1470)<v6>:37851] . Data stores successfully allocated: [192.168.1.15(server6:1520)<v7>:21803] . Equivalent members: [192.168.1.15(server5:1470)<v6>:37851, 192.168.1.15(server6:1520)<v7>:21803] 
+
+[info 2015/07/20 17:05:05.460 PDT server5 <Function Execution Processor1> tid=0x3b] Initializing region _B__User_5
+
+[info 2015/07/20 17:05:05.461 PDT server5 <Function Execution Processor1> tid=0x3b] Initialization of region _B__User_5 completed
+
+[warning 2015/07/20 17:05:05.462 PDT server5 <Function Execution Processor1> tid=0x3b] Configured Redundancy Level Could Not be Satisfied. Advise you to start enough data store nodes to satisfy redundancy for the region. Partitioned Region name = /User Redundancy level set to 3 . Number of available data stores: 2 . Number successfully allocated = 1 . Data stores: [192.168.1.15(server6:1520)<v7>:21803, 192.168.1.15(server5:1470)<v6>:37851] . Data stores successfully allocated: [192.168.1.15(server5:1470)<v6>:37851] . Equivalent members: [192.168.1.15(server5:1470)<v6>:37851, 192.168.1.15(server6:1520)<v7>:21803] 
+
+[warning 2015/07/20 17:05:05.466 PDT server5 <Function Execution Processor1> tid=0x3b] Configured Redundancy Level Could Not be Satisfied. Advise you to start enough data store nodes to satisfy redundancy for the region. Partitioned Region name = /User Redundancy level set to 3 . Number of available data stores: 2 . Number successfully allocated = 1 . Data stores: [192.168.1.15(server6:1520)<v7>:21803, 192.168.1.15(server5:1470)<v6>:37851] . Data stores successfully allocated: [192.168.1.15(server6:1520)<v7>:21803] . Equivalent members: [192.168.1.15(server5:1470)<v6>:37851, 192.168.1.15(server6:1520)<v7>:21803] 
+
+[info 2015/07/20 17:05:05.467 PDT server5 <Function Execution Processor1> tid=0x3b] Initializing region _B__User_7
+
+[info 2015/07/20 17:05:05.468 PDT server5 <Function Execution Processor1> tid=0x3b] Initialization of region _B__User_7 completed
+
+[warning 2015/07/20 17:05:05.469 PDT server5 <Function Execution Processor1> tid=0x3b] Configured Redundancy Level Could Not be Satisfied. Advise you to start enough data store nodes to satisfy redundancy for the region. Partitioned Region name = /User Redundancy level set to 3 . Number of available data stores: 2 . Number successfully allocated = 1 . Data stores: [192.168.1.15(server6:1520)<v7>:21803, 192.168.1.15(server5:1470)<v6>:37851] . Data stores successfully allocated: [192.168.1.15(server5:1470)<v6>:37851] . Equivalent members: [192.168.1.15(server5:1470)<v6>:37851, 192.168.1.15(server6:1520)<v7>:21803] 
+
+[warning 2015/07/20 17:05:05.472 PDT server5 <Function Execution Processor1> tid=0x3b] Configured Redundancy Level Could Not be Satisfied. Advise you to start enough data store nodes to satisfy redundancy for the region. Partitioned Region name = /User Redundancy level set to 3 . Number of available data stores: 2 . Number successfully allocated = 1 . Data stores: [192.168.1.15(server6:1520)<v7>:21803, 192.168.1.15(server5:1470)<v6>:37851] . Data stores successfully allocated: [192.168.1.15(server6:1520)<v7>:21803] . Equivalent members: [192.168.1.15(server5:1470)<v6>:37851, 192.168.1.15(server6:1520)<v7>:21803] 
+
+[info 2015/07/20 17:05:05.474 PDT server5 <Function Execution Processor1> tid=0x3b] Initializing region _B__User_9
+
+[info 2015/07/20 17:05:05.475 PDT server5 <Function Execution Processor1> tid=0x3b] Initialization of region _B__User_9 completed
+
+[warning 2015/07/20 17:05:05.476 PDT server5 <Function Execution Processor1> tid=0x3b] Configured Redundancy Level Could Not be Satisfied. Advise you to start enough data store nodes to satisfy redundancy for the region. Partitioned Region name = /User Redundancy level set to 3 . Number of available data stores: 2 . Number successfully allocated = 1 . Data stores: [192.168.1.15(server6:1520)<v7>:21803, 192.168.1.15(server5:1470)<v6>:37851] . Data stores successfully allocated: [192.168.1.15(server5:1470)<v6>:37851] . Equivalent members: [192.168.1.15(server5:1470)<v6>:37851, 192.168.1.15(server6:1520)<v7>:21803] 
+
+[warning 2015/07/20 17:05:05.481 PDT server5 <Function Execution Processor1> tid=0x3b] Configured Redundancy Level Could Not be Satisfied. Advise you to start enough data store nodes to satisfy redundancy for the region. Partitioned Region name = /User Redundancy level set to 3 . Number of available data stores: 2 . Number successfully allocated = 1 . Data stores: [192.168.1.15(server6:1520)<v7>:21803, 192.168.1.15(server5:1470)<v6>:37851] . Data stores successfully allocated: [192.168.1.15(server6:1520)<v7>:21803] . Equivalent members: [192.168.1.15(server5:1470)<v6>:37851, 192.168.1.15(server6:1520)<v7>:21803] 
+
+[warning 2015/07/20 17:05:14.315 PDT server5 <Function Execution Processor1> tid=0x3b] Configured Redundancy Level Could Not be Satisfied. Advise you to start enough data store nodes to satisfy redundancy for the region. Partitioned Region name = /Post Redundancy level set to 3 . Number of available data stores: 2 . Number successfully allocated = 1 . Data stores: [192.168.1.15(server6:1520)<v7>:21803, 192.168.1.15(server5:1470)<v6>:37851] . Data stores successfully allocated: [192.168.1.15(server6:1520)<v7>:21803] . Equivalent members: [192.168.1.15(server5:1470)<v6>:37851, 192.168.1.15(server6:1520)<v7>:21803] 
+
+[info 2015/07/20 17:05:14.320 PDT server5 <Function Execution Processor1> tid=0x3b] Initializing region _B__Post_1
+
+[info 2015/07/20 17:05:14.321 PDT server5 <Function Execution Processor1> tid=0x3b] Initialization of region _B__Post_1 completed
+
+[warning 2015/07/20 17:05:14.322 PDT server5 <Function Execution Processor1> tid=0x3b] Configured Redundancy Level Could Not be Satisfied. Advise you to start enough data store nodes to satisfy redundancy for the region. Partitioned Region name = /Post Redundancy level set to 3 . Number of available data stores: 2 . Number successfully allocated = 1 . Data stores: [192.168.1.15(server6:1520)<v7>:21803, 192.168.1.15(server5:1470)<v6>:37851] . Data stores successfully allocated: [192.168.1.15(server5:1470)<v6>:37851] . Equivalent members: [192.168.1.15(server5:1470)<v6>:37851, 192.168.1.15(server6:1520)<v7>:21803] 
+
+[warning 2015/07/20 17:05:14.328 PDT server5 <Function Execution Processor1> tid=0x3b] Configured Redundancy Level Could Not be Satisfied. Advise you to start enough data store nodes to satisfy redundancy for the region. Partitioned Region name = /Post Redundancy level set to 3 . Number of available data stores: 2 . Number successfully allocated = 1 . Data stores: [192.168.1.15(server6:1520)<v7>:21803, 192.168.1.15(server5:1470)<v6>:37851] . Data stores successfully allocated: [192.168.1.15(server6:1520)<v7>:21803] . Equivalent members: [192.168.1.15(server5:1470)<v6>:37851, 192.168.1.15(server6:1520)<v7>:21803] 
+
+[info 2015/07/20 17:05:14.331 PDT server5 <Function Execution Processor1> tid=0x3b] Initializing region _B__Post_3
+
+[info 2015/07/20 17:05:14.332 PDT server5 <Function Execution Processor1> tid=0x3b] Initialization of region _B__Post_3 completed
+
+[warning 2015/07/20 17:05:14.333 PDT server5 <Function Execution Processor1> tid=0x3b] Configured Redundancy Level Could Not be Satisfied. Advise you to start enough data store nodes to satisfy redundancy for the region. Partitioned Region name = /Post Redundancy level set to 3 . Number of available data stores: 2 . Number successfully allocated = 1 . Data stores: [192.168.1.15(server6:1520)<v7>:21803, 192.168.1.15(server5:1470)<v6>:37851] . Data stores successfully allocated: [192.168.1.15(server5:1470)<v6>:37851] . Equivalent members: [192.168.1.15(server5:1470)<v6>:37851, 192.168.1.15(server6:1520)<v7>:21803] 
+
+[warning 2015/07/20 17:05:14.335 PDT server5 <Function Execution Processor1> tid=0x3b] Configured Redundancy Level Could Not be Satisfied. Advise you to start enough data store nodes to satisfy redundancy for the region. Partitioned Region name = /Post Redundancy level set to 3 . Number of available data stores: 2 . Number successfully allocated = 1 . Data stores: [192.168.1.15(server6:1520)<v7>:21803, 192.168.1.15(server5:1470)<v6>:37851] . Data stores successfully allocated: [192.168.1.15(server6:1520)<v7>:21803] . Equivalent members: [192.168.1.15(server5:1470)<v6>:37851, 192.168.1.15(server6:1520)<v7>:21803] 
+
+[info 2015/07/20 17:05:14.337 PDT server5 <Function Execution Processor1> tid=0x3b] Initializing region _B__Post_5
+
+[info 2015/07/20 17:05:14.337 PDT server5 <Function Execution Processor1> tid=0x3b] Initialization of region _B__Post_5 completed
+
+[warning 2015/07/20 17:05:14.338 PDT server5 <Function Execution Processor1> tid=0x3b] Configured Redundancy Level Could Not be Satisfied. Advise you to start enough data store nodes to satisfy redundancy for the region. Partitioned Region name = /Post Redundancy level set to 3 . Number of available data stores: 2 . Number successfully allocated = 1 . Data stores: [192.168.1.15(server6:1520)<v7>:21803, 192.168.1.15(server5:1470)<v6>:37851] . Data stores successfully allocated: [192.168.1.15(server5:1470)<v6>:37851] . Equivalent members: [192.168.1.15(server5:1470)<v6>:37851, 192.168.1.15(server6:1520)<v7>:21803] 
+
+[info 2015/07/20 17:05:14.339 PDT server5 <Function Execution Processor1> tid=0x3b] Initializing region _B__Post_6
+
+[info 2015/07/20 17:05:14.340 PDT server5 <Function Execution Processor1> tid=0x3b] Initialization of region _B__Post_6 completed
+
+[warning 2015/07/20 17:05:14.341 PDT server5 <Function Execution Processor1> tid=0x3b] Configured Redundancy Level Could Not be Satisfied. Advise you to start enough data store nodes to satisfy redundancy for the region. Partitioned Region name = /Post Redundancy level set to 3 . Number of available data stores: 2 . Number successfully allocated = 1 . Data stores: [192.168.1.15(server6:1520)<v7>:21803, 192.168.1.15(server5:1470)<v6>:37851] . Data stores successfully allocated: [192.168.1.15(server5:1470)<v6>:37851] . Equivalent members: [192.168.1.15(server5:1470)<v6>:37851, 192.168.1.15(server6:1520)<v7>:21803] 
+
+[warning 2015/07/20 17:05:14.344 PDT server5 <Function Execution Processor1> tid=0x3b] Configured Redundancy Level Could Not be Satisfied. Advise you to start enough data store nodes to satisfy redundancy for the region. Partitioned Region name = /Post Redundancy level set to 3 . Number of available data stores: 2 . Number successfully allocated = 1 . Data stores: [192.168.1.15(server6:1520)<v7>:21803, 192.168.1.15(server5:1470)<v6>:37851] . Data stores successfully allocated: [192.168.1.15(server6:1520)<v7>:21803] . Equivalent members: [192.168.1.15(server5:1470)<v6>:37851, 192.168.1.15(server6:1520)<v7>:21803] 
+
+[warning 2015/07/20 17:05:14.348 PDT server5 <Function Execution Processor1> tid=0x3b] Configured Redundancy Level Could Not be Satisfied. Advise you to start enough data store nodes to satisfy redundancy for the region. Partitioned Region name = /Post Redundancy level set to 3 . Number of available data stores: 2 . Number successfully allocated = 1 . Data stores: [192.168.1.15(server6:1520)<v7>:21803, 192.168.1.15(server5:1470)<v6>:37851] . Data stores successfully allocated: [192.168.1.15(server6:1520)<v7>:21803] . Equivalent members: [192.168.1.15(server5:1470)<v6>:37851, 192.168.1.15(server6:1520)<v7>:21803] 
+
+[info 2015/07/20 17:05:14.350 PDT server5 <Function Execution Processor1> tid=0x3b] Initializing region _B__Post_9
+
+[info 2015/07/20 17:05:14.351 PDT server5 <Function Execution Processor1> tid=0x3b] Initialization of region _B__Post_9 completed
+
+[warning 2015/07/20 17:05:14.352 PDT server5 <Function Execution Processor1> tid=0x3b] Configured Redundancy Level Could Not be Satisfied. Advise you to start enough data store nodes to satisfy redundancy for the region. Partitioned Region name = /Post Redundancy level set to 3 . Number of available data stores: 2 . Number successfully allocated = 1 . Data stores: [192.168.1.15(server6:1520)<v7>:21803, 192.168.1.15(server5:1470)<v6>:37851] . Data stores successfully allocated: [192.168.1.15(server5:1470)<v6>:37851] . Equivalent members: [192.168.1.15(server5:1470)<v6>:37851, 192.168.1.15(server6:1520)<v7>:21803] 
+
+[info 2015/07/20 17:05:14.353 PDT server5 <Function Execution Processor1> tid=0x3b] Initializing region _B__Post_10
+
+[info 2015/07/20 17:05:14.353 PDT server5 <Function Execution Processor1> tid=0x3b] Initialization of region _B__Post_10 completed
+
+[warning 2015/07/20 17:05:14.354 PDT server5 <Function Execution Processor1> tid=0x3b] Configured Redundancy Level Could Not be Satisfied. Advise you to start enough data store nodes to satisfy redundancy for the region. Partitioned Region name = /Post Redundancy level set to 3 . Number of available data stores: 2 . Number successfully allocated = 1 . Data stores: [192.168.1.15(server6:1520)<v7>:21803, 192.168.1.15(server5:1470)<v6>:37851] . Data stores successfully allocated: [192.168.1.15(server5:1470)<v6>:37851] . Equivalent members: [192.168.1.15(server5:1470)<v6>:37851, 192.168.1.15(server6:1520)<v7>:21803] 
+
+[info 2015/07/20 17:05:38.047 PDT server5 <UDP ucast receiver> tid=0x1e] Membership: received new view  [192.168.1.2(locator1:1764:locator)<ec><v0>:8040|8] [192.168.1.2(locator1:1764:locator)<ec><v0>:8040/34353, 192.168.1.15(server5:1470)<v6>:37851/26820, 192.168.1.15(server6:1520)<v7>:21803/12047, 192.168.1.2(server1:1841)<v8>:24543/42303]
+
+[info 2015/07/20 17:05:38.048 PDT server5 <View Message Processor> tid=0x46] Membership: Processing addition < 192.168.1.2(server1:1841)<v8>:24543 >
+
+[info 2015/07/20 17:05:38.048 PDT server5 <View Message Processor> tid=0x46] Admitting member <192.168.1.2(server1:1841)<v8>:24543>. Now there are 4 non-admin member(s).
+
+[info 2015/07/20 17:05:38.048 PDT server5 <View Message Processor> tid=0x46] Membership: Finished view processing viewID =  8
+
+[info 2015/07/20 17:05:38.107 PDT server5 <Pooled High Priority Message Processor 1> tid=0x2a] Member 192.168.1.2(server1:1841)<v8>:24543 is not equivalent or in the same redundancy zone.
+
+[info 2015/07/20 17:07:07.364 PDT server5 <UDP ucast receiver> tid=0x1e] Membership: received new view  [192.168.1.2(locator1:1764:locator)<ec><v0>:8040|9] [192.168.1.2(locator1:1764:locator)<ec><v0>:8040/34353, 192.168.1.15(server5:1470)<v6>:37851/26820, 192.168.1.15(server6:1520)<v7>:21803/12047, 192.168.1.2(server1:1841)<v8>:24543/42303, 192.168.1.2(server2:1844)<v9>:64000/63506]
+
+[info 2015/07/20 17:07:07.364 PDT server5 <View Message Processor> tid=0x46] Membership: Processing addition < 192.168.1.2(server2:1844)<v9>:64000 >
+
+[info 2015/07/20 17:07:07.365 PDT server5 <View Message Processor> tid=0x46] Admitting member <192.168.1.2(server2:1844)<v9>:64000>. Now there are 5 non-admin member(s).
+
+[info 2015/07/20 17:07:07.365 PDT server5 <View Message Processor> tid=0x46] Membership: Finished view processing viewID =  9
+
+[info 2015/07/20 17:07:07.419 PDT server5 <Pooled High Priority Message Processor 1> tid=0x2a] Member 192.168.1.2(server2:1844)<v9>:64000 is not equivalent or in the same redundancy zone.
+
+[info 2015/07/20 17:07:12.678 PDT server5 <UDP ucast receiver> tid=0x1e] Membership: received new view  [192.168.1.2(locator1:1764:locator)<ec><v0>:8040|10] [192.168.1.2(locator1:1764:locator)<ec><v0>:8040/34353, 192.168.1.15(server5:1470)<v6>:37851/26820, 192.168.1.15(server6:1520)<v7>:21803/12047, 192.168.1.2(server1:1841)<v8>:24543/42303, 192.168.1.2(server2:1844)<v9>:64000/63506, 192.168.1.18(server7:2043)<v10>:12540/31615]
+
+[info 2015/07/20 17:07:12.679 PDT server5 <View Message Processor> tid=0x46] Membership: Processing addition < 192.168.1.18(server7:2043)<v10>:12540 >
+
+[info 2015/07/20 17:07:12.680 PDT server5 <View Message Processor> tid=0x46] Admitting member <192.168.1.18(server7:2043)<v10>:12540>. Now there are 6 non-admin member(s).
+
+[info 2015/07/20 17:07:12.680 PDT server5 <View Message Processor> tid=0x46] Membership: Finished view processing viewID =  10
+
+[info 2015/07/20 17:07:12.738 PDT server5 <Pooled High Priority Message Processor 2> tid=0x53] Member 192.168.1.18(server7:2043)<v10>:12540 is not equivalent or in the same redundancy zone.
+
+[info 2015/07/20 17:07:48.850 PDT server5 <Pooled High Priority Message Processor 2> tid=0x53] Member at 192.168.1.18(server7:2043)<v10>:12540 gracefully left the distributed cache: shutdown message received
+
+[info 2015/07/20 17:07:49.121 PDT server5 <UDP ucast receiver> tid=0x1e] Membership: received new view  [192.168.1.2(locator1:1764:locator)<ec><v0>:8040|11] [192.168.1.2(locator1:1764:locator)<ec><v0>:8040/34353, 192.168.1.15(server5:1470)<v6>:37851/26820, 192.168.1.15(server6:1520)<v7>:21803/12047, 192.168.1.2(server1:1841)<v8>:24543/42303, 192.168.1.2(server2:1844)<v9>:64000/63506]
+
+[info 2015/07/20 17:07:49.122 PDT server5 <View Message Processor> tid=0x46] Membership: Processing departing member ( 192.168.1.18(server7:2043)<v10>:12540 )
+
+[info 2015/07/20 17:07:49.123 PDT server5 <View Message Processor> tid=0x46] Membership: Finished view processing viewID =  11
+
+[info 2015/07/20 17:09:39.104 PDT server5 <UDP ucast receiver> tid=0x1e] Membership: received new view  [192.168.1.2(locator1:1764:locator)<ec><v0>:8040|12] [192.168.1.2(locator1:1764:locator)<ec><v0>:8040/34353, 192.168.1.15(server5:1470)<v6>:37851/26820, 192.168.1.15(server6:1520)<v7>:21803/12047, 192.168.1.2(server1:1841)<v8>:24543/42303, 192.168.1.2(server2:1844)<v9>:64000/63506, 192.168.1.18(server7:2245)<v12>:51574/53179]
+
+[info 2015/07/20 17:09:39.105 PDT server5 <View Message Processor> tid=0x46] Membership: Processing addition < 192.168.1.18(server7:2245)<v12>:51574 >
+
+[info 2015/07/20 17:09:39.105 PDT server5 <View Message Processor> tid=0x46] Admitting member <192.168.1.18(server7:2245)<v12>:51574>. Now there are 6 non-admin member(s).
+
+[info 2015/07/20 17:09:39.105 PDT server5 <View Message Processor> tid=0x46] Membership: Finished view processing viewID =  12
+
+[info 2015/07/20 17:09:39.171 PDT server5 <Pooled High Priority Message Processor 2> tid=0x53] Member 192.168.1.18(server7:2245)<v12>:51574 is not equivalent or in the same redundancy zone.
+
+[info 2015/07/20 17:12:51.838 PDT server5 <UDP ucast receiver> tid=0x1e] Membership: received new view  [192.168.1.2(locator1:1764:locator)<ec><v0>:8040|13] [192.168.1.2(locator1:1764:locator)<ec><v0>:8040/34353, 192.168.1.15(server5:1470)<v6>:37851/26820, 192.168.1.15(server6:1520)<v7>:21803/12047, 192.168.1.2(server1:1841)<v8>:24543/42303, 192.168.1.2(server2:1844)<v9>:64000/63506, 192.168.1.18(server7:2245)<v12>:51574/53179, 192.168.1.18(server8:2273)<v13>:47831/32956]
+
+[info 2015/07/20 17:12:51.840 PDT server5 <View Message Processor> tid=0x46] Membership: Processing addition < 192.168.1.18(server8:2273)<v13>:47831 >
+
+[info 2015/07/20 17:12:51.840 PDT server5 <View Message Processor> tid=0x46] Admitting member <192.168.1.18(server8:2273)<v13>:47831>. Now there are 7 non-admin member(s).
+
+[info 2015/07/20 17:12:51.840 PDT server5 <View Message Processor> tid=0x46] Membership: Finished view processing viewID =  13
+
+[info 2015/07/20 17:12:51.899 PDT server5 <Pooled High Priority Message Processor 2> tid=0x53] Member 192.168.1.18(server8:2273)<v13>:47831 is not equivalent or in the same redundancy zone.
+
+[info 2015/07/20 17:14:08.636 PDT server5 <UDP ucast receiver> tid=0x1e] Membership: received new view  [192.168.1.2(locator1:1764:locator)<ec><v0>:8040|14] [192.168.1.2(locator1:1764:locator)<ec><v0>:8040/34353, 192.168.1.15(server5:1470)<v6>:37851/26820, 192.168.1.15(server6:1520)<v7>:21803/12047, 192.168.1.2(server1:1841)<v8>:24543/42303, 192.168.1.2(server2:1844)<v9>:64000/63506, 192.168.1.18(server7:2245)<v12>:51574/53179, 192.168.1.18(server8:2273)<v13>:47831/32956, 192.168.1.13(locator2:1560:locator)<ec><v14>:31859/45372]
+
+[info 2015/07/20 17:14:08.638 PDT server5 <View Message Processor> tid=0x46] Membership: Processing addition < 192.168.1.13(locator2:1560:locator)<ec><v14>:31859 >
+
+[info 2015/07/20 17:14:08.638 PDT server5 <View Message Processor> tid=0x46] Admitting member <192.168.1.13(locator2:1560:locator)<ec><v14>:31859>. Now there are 8 non-admin member(s).
+
+[info 2015/07/20 17:14:08.638 PDT server5 <View Message Processor> tid=0x46] Membership: Finished view processing viewID =  14
+
+[info 2015/07/20 17:14:08.739 PDT server5 <Pooled High Priority Message Processor 2> tid=0x53] Member 192.168.1.13(locator2:1560:locator)<ec><v14>:31859 is not equivalent or in the same redundancy zone.
+
+[info 2015/07/20 17:15:31.439 PDT server5 <UDP ucast receiver> tid=0x1e] Membership: received new view  [192.168.1.2(locator1:1764:locator)<ec><v0>:8040|15] [192.168.1.2(locator1:1764:locator)<ec><v0>:8040/34353, 192.168.1.15(server5:1470)<v6>:37851/26820, 192.168.1.15(server6:1520)<v7>:21803/12047, 192.168.1.2(server1:1841)<v8>:24543/42303, 192.168.1.2(server2:1844)<v9>:64000/63506, 192.168.1.18(server7:2245)<v12>:51574/53179, 192.168.1.18(server8:2273)<v13>:47831/32956, 192.168.1.13(locator2:1560:locator)<ec><v14>:31859/45372, 192.168.1.13(server3:1563)<v15>:33560/38092]
+
+[info 2015/07/20 17:15:31.440 PDT server5 <View Message Processor> tid=0x46] Membership: Processing addition < 192.168.1.13(server3:1563)<v15>:33560 >
+
+[info 2015/07/20 17:15:31.440 PDT server5 <View Message Processor> tid=0x46] Admitting member <192.168.1.13(server3:1563)<v15>:33560>. Now there are 9 non-admin member(s).
+
+[info 2015/07/20 17:15:31.440 PDT server5 <View Message Processor> tid=0x46] Membership: Finished view processing viewID =  15
+
+[info 2015/07/20 17:15:31.522 PDT server5 <Pooled High Priority Message Processor 2> tid=0x53] Member 192.168.1.13(server3:1563)<v15>:33560 is not equivalent or in the same redundancy zone.
+
+[info 2015/07/20 17:16:50.038 PDT server5 <UDP ucast receiver> tid=0x1e] Membership: received new view  [192.168.1.2(locator1:1764:locator)<ec><v0>:8040|16] [192.168.1.2(locator1:1764:locator)<ec><v0>:8040/34353, 192.168.1.15(server5:1470)<v6>:37851/26820, 192.168.1.15(server6:1520)<v7>:21803/12047, 192.168.1.2(server1:1841)<v8>:24543/42303, 192.168.1.2(server2:1844)<v9>:64000/63506, 192.168.1.18(server7:2245)<v12>:51574/53179, 192.168.1.18(server8:2273)<v13>:47831/32956, 192.168.1.13(locator2:1560:locator)<ec><v14>:31859/45372, 192.168.1.13(server3:1563)<v15>:33560/38092, 192.168.1.13(server4:1564)<v16>:8618/3369]
+
+[info 2015/07/20 17:16:50.039 PDT server5 <View Message Processor> tid=0x46] Membership: Processing addition < 192.168.1.13(server4:1564)<v16>:8618 >
+
+[info 2015/07/20 17:16:50.040 PDT server5 <View Message Processor> tid=0x46] Admitting member <192.168.1.13(server4:1564)<v16>:8618>. Now there are 10 non-admin member(s).
+
+[info 2015/07/20 17:16:50.040 PDT server5 <View Message Processor> tid=0x46] Membership: Finished view processing viewID =  16
+
+[info 2015/07/20 17:16:50.126 PDT server5 <Pooled High Priority Message Processor 2> tid=0x53] Member 192.168.1.13(server4:1564)<v16>:8618 is not equivalent or in the same redundancy zone.
+
+[info 2015/07/20 17:27:20.495 PDT server5 <UDP ucast receiver> tid=0x1e] Received Suspect notification for member(s) [192.168.1.13(locator2:1560:locator)<ec><v14>:31859] from 192.168.1.18(server8:2273)<v13>:47831.  Reason=FD heartbeat timeout
+
+[info 2015/07/20 17:27:25.496 PDT server5 <VERIFY_SUSPECT.TimerThread> tid=0x8d] 192.168.1.15(server5:1470)<v6>:37851: No suspect verification response received from 192.168.1.13(locator2:1560:locator)<ec><v14>:31859 in 5001 milliseconds: I believe it is gone.
+
+[warning 2015/07/20 17:27:33.889 PDT server5 <BridgeServer-LoadPollingThread> tid=0x3a] Attempting TCP/IP reconnect to  192.168.1.13(locator2:1560:locator)<ec><v14>:31859
+
+[info 2015/07/20 17:27:33.889 PDT server5 <BridgeServer-LoadPollingThread> tid=0x3a] Connection: shared=true ordered=true failed to connect to peer 192.168.1.13(locator2:1560:locator)<ec><v14>:31859 because: java.net.SocketException: Host is down
+
+[info 2015/07/20 17:27:35.505 PDT server5 <UDP ucast receiver> tid=0x1e] Received Suspect notification for member(s) [192.168.1.13(locator2:1560:locator)<ec><v14>:31859] from 192.168.1.18(server8:2273)<v13>:47831.  Reason=still being suspected
+
+[warning 2015/07/20 17:27:35.890 PDT server5 <BridgeServer-LoadPollingThread> tid=0x3a] Connection: Attempting reconnect to peer  192.168.1.13(locator2:1560:locator)<ec><v14>:31859
+
+[info 2015/07/20 17:27:36.457 PDT server5 <UDP ucast receiver> tid=0x1e] Membership: received new view  [192.168.1.2(locator1:1764:locator)<ec><v0>:8040|18] [192.168.1.2(locator1:1764:locator)<ec><v0>:8040/34353, 192.168.1.15(server5:1470)<v6>:37851/26820, 192.168.1.15(server6:1520)<v7>:21803/12047, 192.168.1.2(server1:1841)<v8>:24543/42303, 192.168.1.2(server2:1844)<v9>:64000/63506, 192.168.1.18(server7:2245)<v12>:51574/53179, 192.168.1.18(server8:2273)<v13>:47831/32956] crashed mbrs: [192.168.1.13(locator2:1560:locator)<ec><v14>:31859/45372, 192.168.1.13(server3:1563)<v15>:33560/38092, 192.168.1.13(server4:1564)<v16>:8618/3369]
+
+[info 2015/07/20 17:27:36.458 PDT server5 <View Message Processor> tid=0x46] Membership: Processing departing member ( 192.168.1.13(locator2:1560:locator)<ec><v14>:31859 )
+
+[info 2015/07/20 17:27:36.459 PDT server5 <View Message Processor> tid=0x46] Member at 192.168.1.13(locator2:1560:locator)<ec><v14>:31859 unexpectedly left the distributed cache: departed JGroups view
+
+[info 2015/07/20 17:27:36.460 PDT server5 <View Message Processor> tid=0x46] Membership: Processing departing member ( 192.168.1.13(server3:1563)<v15>:33560 )
+
+[info 2015/07/20 17:27:36.460 PDT server5 <View Message Processor> tid=0x46] Member at 192.168.1.13(server3:1563)<v15>:33560 unexpectedly left the distributed cache: departed JGroups view
+
+[info 2015/07/20 17:27:36.460 PDT server5 <View Message Processor> tid=0x46] Membership: Processing departing member ( 192.168.1.13(server4:1564)<v16>:8618 )
+
+[warning 2015/07/20 17:27:36.460 PDT server5 <DM-MemberEventInvoker> tid=0x17] Redundancy has dropped below 3 configured copies to 2 actual copies for /User
+
+[warning 2015/07/20 17:27:36.464 PDT server5 <DM-MemberEventInvoker> tid=0x17] Redundancy has dropped below 3 configured copies to 2 actual copies for /Post
+
+[info 2015/07/20 17:27:36.465 PDT server5 <View Message Processor> tid=0x46] Member at 192.168.1.13(server4:1564)<v16>:8618 unexpectedly left the distributed cache: departed JGroups view
+
+[info 2015/07/20 17:27:36.465 PDT server5 <View Message Processor> tid=0x46] Membership: Finished view processing viewID =  18
+
+[info 2015/07/20 17:27:36.468 PDT server5 <Pooled Waiting Message Processor 0> tid=0x25] Region _B__Post_6 is requesting synchronization with 192.168.1.18(server7:2245)<v12>:51574 for 192.168.1.13(server3:1563)<v15>:33560
+
+[info 2015/07/20 17:27:36.468 PDT server5 <Pooled Waiting Message Processor 1> tid=0x50] Region _B__User_5 is requesting synchronization with 192.168.1.18(server7:2245)<v12>:51574 for 192.168.1.13(server3:1563)<v15>:33560
+
+[info 2015/07/20 17:27:36.478 PDT server5 <Pooled Waiting Message Processor 0> tid=0x25] Region _B__Post_6 is requesting synchronization with 192.168.1.2(server1:1841)<v8>:24543 for 192.168.1.13(server3:1563)<v15>:33560
+
+[info 2015/07/20 17:27:36.478 PDT server5 <Pooled Waiting Message Processor 1> tid=0x50] Region _B__User_5 is requesting synchronization with 192.168.1.2(server1:1841)<v8>:24543 for 192.168.1.13(server3:1563)<v15>:33560
+
+[info 2015/07/20 17:27:36.632 PDT server5 <UDP ucast receiver> tid=0x1e] Membership: received new view  [192.168.1.2(locator1:1764:locator)<ec><v0>:8040|19] [192.168.1.2(locator1:1764:locator)<ec><v0>:8040/34353, 192.168.1.15(server5:1470)<v6>:37851/26820, 192.168.1.15(server6:1520)<v7>:21803/12047, 192.168.1.2(server1:1841)<v8>:24543/42303, 192.168.1.2(server2:1844)<v9>:64000/63506, 192.168.1.18(server7:2245)<v12>:51574/53179, 192.168.1.18(server8:2273)<v13>:47831/32956]
+
+[info 2015/07/20 17:27:36.633 PDT server5 <View Message Processor> tid=0x46] Membership: Finished view processing viewID =  19
+
+[info 2015/07/20 17:27:37.892 PDT server5 <BridgeServer-LoadPollingThread> tid=0x3a] Ending reconnect attempt because 192.168.1.13(locator2:1560:locator)<ec><v14>:31859 has disappeared.
+
+[info 2015/07/20 17:27:40.508 PDT server5 <VERIFY_SUSPECT.TimerThread> tid=0x91] 192.168.1.15(server5:1470)<v6>:37851: No suspect verification response received from 192.168.1.13(locator2:1560:locator)<ec><v14>:31859 in 5001 milliseconds: I believe it is gone.
+
+[info 2015/07/20 17:35:21.608 PDT server5 <Pooled High Priority Message Processor 4> tid=0x96] Member at 192.168.1.18(server8:2273)<v13>:47831 gracefully left the distributed cache: shutdown message received
+
+[info 2015/07/20 17:35:21.880 PDT server5 <UDP ucast receiver> tid=0x1e] Membership: received new view  [192.168.1.2(locator1:1764:locator)<ec><v0>:8040|20] [192.168.1.2(locator1:1764:locator)<ec><v0>:8040/34353, 192.168.1.15(server5:1470)<v6>:37851/26820, 192.168.1.15(server6:1520)<v7>:21803/12047, 192.168.1.2(server1:1841)<v8>:24543/42303, 192.168.1.2(server2:1844)<v9>:64000/63506, 192.168.1.18(server7:2245)<v12>:51574/53179]
+
+[info 2015/07/20 17:35:21.881 PDT server5 <View Message Processor> tid=0x46] Membership: Processing departing member ( 192.168.1.18(server8:2273)<v13>:47831 )
+
+[info 2015/07/20 17:35:21.882 PDT server5 <View Message Processor> tid=0x46] Membership: Finished view processing viewID =  20
+
+[info 2015/07/20 17:40:57.390 PDT server5 <Function Execution Processor1> tid=0x3b] Received GFSH shutdown. Shutting down member 192.168.1.15(server5:1470)<v6>:37851
+
+[info 2015/07/20 17:40:57.415 PDT server5 <Function Execution Processor1> tid=0x3b] GemFireCache[id = 304715920; isClosing = true; isShutDownAll = false; closingGatewayHubsByShutdownAll = false; created = Mon Jul 20 17:02:07 PDT 2015; server = true; copyOnRead = false; lockLease = 120; lockTimeout = 60]: Now closing.
+
+[info 2015/07/20 17:40:57.415 PDT server5 <Function Execution Processor1> tid=0x3b] Resetting original MemoryPoolMXBean heap threshold bytes 0 on pool CMS Old Gen
+
+[info 2015/07/20 17:40:57.432 PDT server5 <Function Execution Processor1> tid=0x3b] Bridge server on port 49,797 is shutting down.
+
+[info 2015/07/20 17:40:57.434 PDT server5 <Distributed system shutdown hook> tid=0xf] VM is exiting - shutting down distributed system
+
+[info 2015/07/20 17:40:57.537 PDT server5 <Pooled High Priority Message Processor 5> tid=0x9a] Member at 192.168.1.2(server1:1841)<v8>:24543 gracefully left the distributed cache: shutdown message received
+
+[info 2015/07/20 17:40:57.553 PDT server5 <Function Execution Processor1> tid=0x3b] Shutting down DistributionManager 192.168.1.15(server5:1470)<v6>:37851. 
+
+[info 2015/07/20 17:40:57.557 PDT server5 <Pooled High Priority Message Processor 4> tid=0x96] Member at 192.168.1.2(server2:1844)<v9>:64000 gracefully left the distributed cache: shutdown message received
+
+[info 2015/07/20 17:40:57.557 PDT server5 <Pooled High Priority Message Processor 5> tid=0x9a] Member at 192.168.1.15(server6:1520)<v7>:21803 gracefully left the distributed cache: shutdown message received
+
+[info 2015/07/20 17:40:58.660 PDT server5 <Function Execution Processor1> tid=0x3b] Now closing distribution for 192.168.1.15(server5:1470)<v6>:37851
+
+[info 2015/07/20 17:40:58.771 PDT server5 <Function Execution Processor1> tid=0x3b] DistributionManager stopped in 1,218ms.
+
+[info 2015/07/20 17:40:58.771 PDT server5 <Function Execution Processor1> tid=0x3b] Marking DistributionManager 192.168.1.15(server5:1470)<v6>:37851 as closed.

@@ -5,7 +5,7 @@
 <client-cache>
 	
 	<pool name="client"  subscription-enabled="true" >
-		<locator host="localhost" port="41111" />
+		<locator host="gemhost1" port="41111" />
 	</pool>
 	
 	<region name="User">

@@ -61,7 +61,7 @@ public class MakeAPost {
 		 Scanner in = new Scanner(System.in);
 		 System.out.println("What would you like to post");	
 		 String newPost = in.nextLine();
-		 Integer myPostNumber = 5;
+		 Integer myPostNumber = 20150;
 		 myPostNumber = myPostNumber++;
 		 Post myPost = new Post(myPostNumber, newPost, 2222);
 		 
